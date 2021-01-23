@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+@{
+
+    ViewBag.Title = "Inicio";
+
+}
+<Link href="~/Js/js-image-slider.css" rel="stylesheet" type="text/css"/>
+<script src="~/Js/js-image-slider.js" type="text/javascript"></script>
+<body>
+    <form id="form1" runat=" server">
+        <div id="slider">
+            <img src="@Url.Content("~/Imagenes/1.jpg")" />
+            <img src="@Url.Content("~/Imagenes/2.jpeg")" />
+            <img src="@Url.Content("~/Imagenes/3.jpeg")" />
+            <img src="@Url.Content("~/Imagenes/4.1.jpg")" />
+            <img src="@Url.Content("~/Imagenes/5.0.jpg")" />
+           
+
+        </div>
+    </form>
+   
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Empleados</h2>
+
+            <img class="img-responsive" src="@Url.Content("~/Imagenes/Imagen1.jpg")" width="321" height="276" />
+            <br />
+            <p>
+
+                Cantidad de Empleados:
+
+            </p>
+            <p><a class="btn btn-default" href="Empleadoes">Click Aqui &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Nomina </h2>
+            <img class="img-responsive" src="@Url.Content("~/Imagenes/Imagen5.jpg")" width="321" height="276" />
+            <p>
+                La nomina Total de este mes es de:
+
+            </p>
+            <p><a class="btn btn-default" href="Nominas">Click Aqui &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <i class="icon icon-slash-2" style="color:#00D2BE"></i>
+            <h2>Permisos</h2>
+            <img class="img-responsive" src="@Url.Content("~/Imagenes/Imagen4.jpg")" width="321" height="276" />
+            <p>Solicitar permisos</p>
+            <p><a class="btn btn-default" href="Permisos">Click Aqui &raquo;</a></p>
+        </div>
+    </div>
+
+   
+</body>

@@ -1,0 +1,13 @@
+﻿
+@model GRHm.Models.Empleado
+
+@{
+                /**/
+
+                ViewBag.Title = "LlenarCombo";
+}
+
+
+<h2>LlenarCombo</h2>
+
+@Html.DropDownList("A", ViewBag.Departamentos as SelectList, "Seleccione")

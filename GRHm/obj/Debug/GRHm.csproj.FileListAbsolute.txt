@@ -1,0 +1,168 @@
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\GRHm.dll.config
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\GRHm.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\GRHm.pdb
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\csc.exe
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\csc.exe.config
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\csc.rsp
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\csi.exe
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\csi.exe.config
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\csi.rsp
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.AppContext.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Console.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.IO.Compression.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Security.Claims.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.ValueTuple.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\vbc.exe
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\vbc.exe.config
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\vbc.rsp
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\VBCSCompiler.exe
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\Antlr3.Runtime.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\EntityFramework.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\EntityFramework.SqlServer.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\Newtonsoft.Json.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.Helpers.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.Mvc.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.Optimization.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.Razor.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.WebPages.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.WebPages.Razor.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\WebGrease.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\EntityFramework.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\EntityFramework.SqlServer.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.Helpers.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.Mvc.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.Optimization.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.Razor.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.WebPages.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Web.WebPages.Razor.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\Newtonsoft.Json.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\Antlr3.Runtime.pdb
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\obj\Debug\GRHm.csprojAssemblyReference.cache
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\obj\Debug\GRHm.csproj.CoreCompileInputs.cache
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\obj\Debug\GRHm.csproj.CopyComplete
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\obj\Debug\GRHm.dll
+C:\Users\Yaswell\Desktop\ITLA\Programacion 3\Programas\GRHm\GRHm\obj\Debug\GRHm.pdb
+C:\Users\HP\Downloads\GRHm\GRHm\bin\GRHm.dll.config
+C:\Users\HP\Downloads\GRHm\GRHm\bin\GRHm.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\GRHm.pdb
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\csc.exe
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\csc.exe.config
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\csc.rsp
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\csi.exe
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\csi.exe.config
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\csi.rsp
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.AppContext.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Console.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.IO.Compression.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.IO.Pipes.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Security.Claims.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.ValueTuple.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Xml.XPath.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\vbc.exe
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\vbc.exe.config
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\vbc.rsp
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Downloads\GRHm\GRHm\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Downloads\GRHm\GRHm\bin\Antlr3.Runtime.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\EntityFramework.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\Newtonsoft.Json.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.Helpers.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.Mvc.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.Optimization.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.Razor.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.WebPages.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.WebPages.Razor.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\WebGrease.dll
+C:\Users\HP\Downloads\GRHm\GRHm\bin\EntityFramework.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.Helpers.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.Mvc.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.Optimization.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.Razor.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.WebPages.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Web.WebPages.Razor.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\Newtonsoft.Json.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\Antlr3.Runtime.pdb
+C:\Users\HP\Downloads\GRHm\GRHm\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\HP\Downloads\GRHm\GRHm\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Downloads\GRHm\GRHm\obj\Debug\GRHm.csprojAssemblyReference.cache
+C:\Users\HP\Downloads\GRHm\GRHm\obj\Debug\GRHm.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\GRHm\GRHm\obj\Debug\GRHm.csproj.CopyComplete
+C:\Users\HP\Downloads\GRHm\GRHm\obj\Debug\GRHm.dll
+C:\Users\HP\Downloads\GRHm\GRHm\obj\Debug\GRHm.pdb

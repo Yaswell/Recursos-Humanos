@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmplModelStoreContainer" CdmEntityContainer="EmplModelContainer">
+    <EntitySetMapping Name="EmpleadoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EmplModel.Empleado)">
+        <MappingFragment StoreEntitySet="EmpleadoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoEmpleado" ColumnName="CodigoEmpleado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="FechadeNac" ColumnName="FechadeNac" />
+          <ScalarProperty Name="Salario" ColumnName="Salario" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepartamentoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EmplModel.Departamento)">
+        <MappingFragment StoreEntitySet="DepartamentoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDepartamento" ColumnName="CodigoDepartamento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CargoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EmplModel.Cargo)">
+        <MappingFragment StoreEntitySet="CargoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NomCargo" ColumnName="NomCargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NominaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EmplModel.Nomina)">
+        <MappingFragment StoreEntitySet="NominaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="MontoTotal" ColumnName="MontoTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PermisosSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EmplModel.Permisos)">
+        <MappingFragment StoreEntitySet="PermisosSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Desde" ColumnName="Desde" />
+          <ScalarProperty Name="Hasta" ColumnName="Hasta" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalidaEMpleadosSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EmplModel.SalidaEMpleados)">
+        <MappingFragment StoreEntitySet="SalidaEMpleadosSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Empleado" ColumnName="Empleado" />
+          <ScalarProperty Name="TipoSalida" ColumnName="TipoSalida" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+          <ScalarProperty Name="FechaSalida" ColumnName="FechaSalida" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VacacionesSet">
+      <EntityTypeMapping TypeName="IsTypeOf(EmplModel.Vacaciones)">
+        <MappingFragment StoreEntitySet="VacacionesSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Desde" ColumnName="Desde" />
+          <ScalarProperty Name="Hasta" ColumnName="Hasta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,137 @@
+﻿@model IEnumerable<GRHm.Models.Empleado>
+
+
+@{
+    ViewBag.Title = "Empleados";
+}
+
+<h2>Empleados</h2>
+
+<p>
+    @using (Html.BeginForm("Index", "Agenda", FormMethod.Get))
+    {
+        <text> Encontrar por Nombre:</text> @Html.TextBox("search")<input type="submit" value="Buscar" />
+    }
+</p>
+<body>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                Codigo de Empleado
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Departamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargo)
+            </th>
+            <th>
+                Fecha de Nacimiento
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estatus)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CodigoEmpleado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Departamento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cargo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechadeNac)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Salario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estatus)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <div class="col-md-4">
+        <h2>Empleados Activos </h2>
+
+        <p>
+            La nomina Total de este mes es de:
+
+        </p>
+        <p><a class="btn btn-default" href="/Empleadoes/EmpleadoActivos">Click Aqui &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <i class="icon icon-slash-2" style="color:#00D2BE"></i>
+        <h2>Empleados Inactivos</h2>
+
+        <p>Solicitar permisos</p>
+        <p><a class="btn btn-default" href="/Empleadoes/EmpleadoInactivos">Click Aqui &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Salida de Empleado </h2>
+
+        <p>
+            Para salidas de empleados
+
+        </p>
+        <p><a class="btn btn-default" href="/SalidaEMpleados">Click Aqui &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <i class="icon icon-slash-2" style="color:#00D2BE"></i>
+        <h2>Permisos</h2>
+
+        <p>Solicitar permisos</p>
+        <p><a class="btn btn-default" href="/Permisos">Click Aqui &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <i class="icon icon-slash-2" style="color:#00D2BE"></i>
+        <h2>Vacaciones</h2>
+
+        <p>Para Solicitar Vacaciones</p>
+        <p><a class="btn btn-default" href="/Permisos">Click Aqui &raquo;</a></p>
+    </div>
+    <br />
+</body>

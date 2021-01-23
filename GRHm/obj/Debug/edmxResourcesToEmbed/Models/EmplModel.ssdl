@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmplModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EmplModelStoreContainer">
+    <EntitySet Name="EmpleadoSet" EntityType="EmplModel.Store.EmpleadoSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DepartamentoSet" EntityType="EmplModel.Store.DepartamentoSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CargoSet" EntityType="EmplModel.Store.CargoSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NominaSet" EntityType="EmplModel.Store.NominaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PermisosSet" EntityType="EmplModel.Store.PermisosSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SalidaEMpleadosSet" EntityType="EmplModel.Store.SalidaEMpleadosSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VacacionesSet" EntityType="EmplModel.Store.VacacionesSet" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="EmpleadoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CodigoEmpleado" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Apellido" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telefono" Type="int" Nullable="false" />
+    <Property Name="Departamento" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cargo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FechadeNac" Type="datetime" Nullable="false" />
+    <Property Name="Salario" Type="int" Nullable="false" />
+    <Property Name="Estatus" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DepartamentoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CodigoDepartamento" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CargoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomCargo" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NominaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Año" Type="int" Nullable="false" />
+    <Property Name="Mes" Type="int" Nullable="false" />
+    <Property Name="MontoTotal" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PermisosSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Desde" Type="datetime" Nullable="false" />
+    <Property Name="Hasta" Type="datetime" Nullable="false" />
+    <Property Name="Motivo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Comentario" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SalidaEMpleadosSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Empleado" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TipoSalida" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Motivo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FechaSalida" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VacacionesSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Desde" Type="datetime" Nullable="false" />
+    <Property Name="Hasta" Type="datetime" Nullable="false" />
+  </EntityType>
+</Schema>

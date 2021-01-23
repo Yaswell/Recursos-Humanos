@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="hasSidebar hasPageActions hasBreadcrumb conceptual" lang="es-es" dir="ltr" data-authenticated="false" data-auth-status-determined="false" data-target="docs" x-ms-format-detection="none">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:title" content="Introducción a ASP.NET Web Pages: mostrar datos" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.microsoft.com/es-es/aspnet/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data" />
+	<meta property="og:description" content="Este tutorial muestra cómo crear una base de datos en WebMatrix y cómo mostrar la base de datos en una página al usar ASP.NET Web Pages (Razor). Se supone y..." />
+	<meta property="og:image" content="https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png" />
+	<meta property="og:image:alt" content="Microsoft Logo" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@docsmsft" />
+
+		<meta name="breadcrumb_path" content="/aspnet/breadcrumb/toc.json" />
+<meta name="ms.topic" content="conceptual" />
+<meta name="bilingual_type" content="hover over" />
+<meta name="ms.technology" content="aspnet-webpages" />
+<meta name="ms.prod" content="aspnet-framework" />
+<meta name="ms.openlocfilehash" content="9158a1f53268daec6e6fbdf003dd73e1d62cc667" />
+<meta name="msc.legacyurl" content="/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data" />
+<meta name="ms.assetid" content="b3a006a0-3ea2-4d45-b833-e20e3a3c0a1a" />
+<meta name="msc.type" content="authoredcontent" />
+<meta name="ms.contentlocale" content="es-ES" />
+<meta name="author" content="Rick-Anderson" />
+<meta name="ms.lasthandoff" content="03/01/2019" />
+<meta name="description" content="Este tutorial muestra c&#243;mo crear una base de datos en WebMatrix y c&#243;mo mostrar la base de datos en una p&#225;gina al usar ASP.NET Web Pages (Razor). Se supone y..." />
+<meta name="ms.author" content="riande" />
+<meta name="uid" content="web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data" />
+<meta name="ms.translationtype" content="MT" />
+<meta name="ms.sourcegitcommit" content="24b1f6decbb17bb22a45166e5fdb0845c65af498" />
+<meta name="ms.date" content="05/28/2015" />
+<meta name="ms.locfileid" content="57031252" />
+<meta name="search.ms_sitename" content="Docs" />
+<meta name="search.ms_docsetname" content="AspNetDocs" />
+<meta name="version" content="0" />
+<meta name="locale" content="es-es" />
+<meta name="site_name" content="Docs" />
+<meta name="search.ms_product" content="MSDN" />
+<meta name="depot_name" content="MSDN.AspNetDocs" />
+<meta name="updated_at" content="2019-03-14 11:44 AM" />
+<meta name="gitcommit" content="https://github.com/aspnet/AspNetDocs.es-es/blob/abecd67eb58fbf78ece846852d666973bd9eb512/aspnet/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data.md" />
+<meta name="original_content_git_url" content="https://github.com/aspnet/AspNetDocs.es-es/blob/live-sxs/aspnet/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data.md" />
+<meta name="document_id" content="ad4dfe32-6242-7cb7-b3cb-00383be4879a" />
+<meta name="document_version_independent_id" content="e61afbba-59cc-b1c4-4eb0-398706d50a8e" />
+<meta name="page_type" content="conceptual" />
+<meta name="toc_rel" content="../../../../toc.json" />
+<meta name="pdf_url_template" content="https://docs.microsoft.com/pdfstore/es-ES/MSDN.AspNetDocs/{branchName}{pdfName}" />
+<meta name="word_count" content="7395" />
+
+	<meta name="scope" content="ASP.NET" />
+<link href="https://docs.microsoft.com/es-es/aspnet/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data" rel="canonical">
+	<title>Introducción a ASP.NET Web Pages: mostrar datos | Microsoft Docs</title>
+
+		<link rel="stylesheet" href="/_themes/docs.theme/master/es-es/_themes/styles/6e59f4a9.site-ltr.css ">
+
+	<link rel="stylesheet" href="/_themes/docs.theme/master/es-es/_themes/styles/f1e7d9d9.conceptual.css ">
+
+
+	<script>
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			azureHeaderLocale: 'es-es',
+			contentLocale: 'es-es',
+			contentDir: 'ltr',
+			userLocale: 'es-es',
+			userDir: 'ltr',
+			pageTemplate: 'Conceptual',
+			brand: '',
+			context: {
+
+			},
+			hasComments: false,
+			feedbackSystem: 'None',
+			feedbackGitHubRepo: '',
+			feedbackProductUrl: '',
+			contentGitUrl: 'https://github.com/aspnet/AspNetDocs.es-es/blob/live/aspnet/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data.md',
+		},
+		functions:{},
+		settings:{
+			extendBreadcrumb: false,
+			enableUHFPPE: false
+		}
+	};
+	if (!('Promise' in window && 'resolve' in window.Promise && 'reject' in window.Promise && 'all' in window.Promise && 'race' in window.Promise)) {
+		document.write('<script src="https://static.docs.com/ui/third-party/bluebird/3.5.0/bluebird.min.js" integrity="sha384-aD4BDeDGeLXLpPK4yKeqtZQa9dv4a/7mQ+4L5vwshIYH1Mc2BrXvHd32iHzYCQy5" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof fetch !== 'function') {
+		document.write('<script src="https://static.docs.com/ui/third-party/fetch/2.0.3/fetch.min.js" integrity="sha384-H3LQq82b6Mm80GYRHtRSlTwO9DoXctmYCVEYk9M8mp97lRzs6DuSrHVUg3SBP9w0" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof HTMLTemplateElement === 'undefined') {
+		document.write('<script src="https://static.docs.com/ui/third-party/template/1.4.0/template.min.js" integrity="sha384-1zKzI6ldTVHMU7n0W2HpE/lhHI+UG4D9IIaxbj3kT2UhCWicdTuJkTtnKuu0CQzN" crossorigin="anonymous"><\/script>');
+	}
+	</script>
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+		<script src="/_themes/docs.theme/master/es-es/_themes/scripts/a97b409e.index-docs.js"></script>
+
+<script>bazadebezolkohpepadr="985531805"</script><script type="text/javascript" src="https://docs.microsoft.com/akam/10/3abe0739" defer></script></head>
+
+<body lang="es-es" dir="ltr">
+<div class="header-holder">
+		<div id="headerAreaHolder" data-bi-name="header">
+			<div id="uhf-placeholder"></div>
+		</div>
+	<div class="content-header uhf-container has-padding has-default-focus" data-bi-name="content-header">
+		<nav class="has-padding-none-mobile" data-bi-name="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList" role="navigation" aria-label="Ruta de navegación">
+		<ul id="page-breadcrumbs" class="breadcrumbs">
+		</ul>
+		</nav>
+		<div class="content-header-controls exit-focus">
+			<button type="button" class="ap-collapse-behavior ap-expanded button" data-bi-name="ap-collapse" aria-controls="action-panel">
+				<span class="icon"><span class="docon docon-exit-mode"></span></span>
+				<span>Salir del modo de enfoque</span>
+			</button>
+			
+		</div>
+		<div class="content-header-controls">
+			<button type="button" class="contents-button button" data-bi-name="contents-expand" aria-controls="sidebar" aria-haspopup="true">
+				<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+				<span>Contenido</span>
+			</button>
+		</div>
+		<div class="action-bar">
+			<ul class="action-list">
+							<li id="contenteditbtn" hidden>
+									<a href="https://github.com/aspnet/AspNetDocs.es-es/blob/live/aspnet/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data.md" class="button is-text is-icon-only-touch is-size-7" title="Editar este documento" data-bi-name="edit" data-original_content_git_url="https://github.com/aspnet/AspNetDocs.es-es/blob/live-sxs/aspnet/web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data.md" data-original_content_git_url_template="" data-pr_repo="" data-pr_branch="">
+									<span class="icon">
+										<span class="docon docon-edit-outline" aria-hidden="true"></span>
+									</span>
+									<span class="action-item-text">Editar</span>
+								</a>
+							</li>
+				<li>
+					<div class="sharing dropdown has-caret" auto-align>
+						<a href="#" class="dropdown-trigger button is-text is-size-7 is-icon-only-touch" aria-haspopup="true" aria-controls="sharing-menu" aria-expanded="false" title="Compartir este documento" data-bi-name="share">
+							<span class="icon">
+								<span class="docon docon-sharing" aria-hidden="true"></span>
+							</span>
+							<span class="action-item-text">Compartir</span>
+						</a>
+						<div class="dropdown-menu" id="sharing-menu" role="menu">
+							<ul data-bi-name="share-links">
+								<li><a class="share-twitter" data-bi-name="twitter">
+									<span class="icon">
+										<span class="docon docon-brand-twitter" aria-hidden="true"></span>
+									</span>
+									<span>Twitter</span></a></li>
+								<li><a class="share-linkedin" data-bi-name="linkedin">
+									<span class="icon">
+										<span class="docon docon-brand-linkedin" aria-hidden="true"></span>
+									</span>
+									<span>LinkedIn</span></a></li>
+								<li><a class="share-facebook" data-bi-name="facebook">
+									<span class="icon">
+										<span class="docon docon-brand-facebook" aria-hidden="true"></span>
+									</span>
+									<span>Facebook</span></a></li>
+								<li><a class="share-email" data-bi-name="email">
+									<span class="icon">
+										<span class="docon docon-mail-message-fill" aria-hidden="true"></span>
+									</span>
+									<span>Correo electrónico</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<button class="toggle-theme button is-text is-size-7 is-icon-only-touch" aria-label="toggle-theme" data-bi-name="select-theme">
+						<span class="icon">
+							<span class="docon docon-sun"></span>
+						</span>
+						<span class="action-item-text">Tema</span>
+					</button>
+				</li>
+				<li>
+					<div class="lang-toggle-container">
+						<label for="language-toggle" aria-hidden="true" tabindex="-1">Leer en inglés</label>
+						<div class="checkbox-toggle-wrapper">
+							<input type="checkbox" id="language-toggle" aria-label="Leer en inglés">
+							<label for="language-toggle" class="switch"></label>
+						</div>
+					</div>
+				</li>
+				<li class="is-unstyled-action-list-item">
+					<a class="docs-sign-in auth-status-determined not-authenticated button is-text has-text-primary is-size-7" href="#">Iniciar sesión</a>
+					<div class="dropdown has-caret auth-status-determined authenticated" auto-align>
+						<button class="dropdown-trigger button is-text is-size-7 is-icon-only-touch has-inner-focus" aria-label="Su cuenta" aria-haspopup="true" aria-controls="user-menu" aria-expanded="false">
+							<span class="image icon" aria-hidden="true">
+								<img class="has-body-background-medium is-rounded" data-profile-property="avatarUrl">
+							</span>
+							<span class="is-truncated" data-profile-property="userName"></span>
+						</button>
+						<div class="dropdown-menu box" id="user-menu" role="menu">
+							<div class="media is-user-dir">
+								<div class="media-left">
+									<span class="image is-64x64" aria-hidden="true">
+										<img class="has-body-background-medium is-rounded" data-profile-property="avatarUrl">
+									</span>
+								</div>
+								<div class="media-content">
+									<p class="title has-margin-top-small">
+										<span class="is-truncated" style="max-width: 200px" data-profile-property="userName"></span>
+									</p>
+									<p class="subtitle">
+										<span class="is-truncated" style="max-width: 200px" data-profile-property="upn"></span>
+									</p>
+								</div>
+							</div>
+							<ul class="is-unstyled has-margin-none">
+								<li><a href="/profile" data-profile-property="profileUrl">Perfil</a></li>
+								<li><a class="docs-sign-out" href="#">Cerrar sesión</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<button type="button" class="contents-button" aria-label="Contenido" data-bi-name="contents-expand-">
+				<span class="docon docon-editor-list-bullet"></span><span>Contents</span>
+			</button>
+		</div>
+	</div>
+
+		<div id="banner-holder" class="has-default-focus has-overflow-hidden">
+		</div>
+
+	<div id="disclaimer-holder" class="has-overflow-hidden"></div>
+	</div>
+
+	<div class="mainContainer uhf-container  has-top-padding  has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps ">
+
+			<section class="primary-holder column is-two-thirds-tablet is-three-quarters-desktop">
+				<div class="columns has-large-gaps ">
+
+
+					<div id="page-actions" class="right-container column is-one-quarter is-one-fifth-desktop is-hidden-mobile is-hidden-tablet-only" data-bi-name="pageactions" role="complementary" aria-label="Acciones de página">
+							<nav id="side-doc-outline" class="doc-outline" data-bi-name="intopic toc" role="navigation" aria-label="En navegación de páginas">
+								<h3>En este artículo</h3>
+							</nav>
+					</div>
+
+
+				<div id="main-column" class="column  is-full is-four-fifths-desktop ">
+
+					<main id="main" role="main" class="content " data-bi-name="content" lang="es-es" dir="ltr">
+
+
+
+						<h1 id="introducing-aspnet-web-pages---displaying-data" sourcefile="web-pages/overview/getting-started/introducing-aspnet-web-pages-2/displaying-data.md" sourcestartlinenumber="19"><span data-ttu-id="3918a-104">Introducción a las páginas Web ASP.NET - mostrar datos</span><span class="sxs-lookup"><span data-stu-id="3918a-104">Introducing ASP.NET Web Pages - Displaying Data</span></span></h1>
+
+						<ul class="metadata page-metadata" data-bi-name="page info" lang="es-es" dir="ltr">
+							<li class="displayDate loading">
+								<time role="presentation" datetime="2015-05-28T00:00:00.000Z" data-article-date-source="ms.date">05/28/2015</time>
+							</li>
+								<li class="readingTime">Tiempo de lectura: 36 minutos</li>
+							<li class="contributors-holder">
+								<span class="contributors-text">Colaboradores</span>
+								<ul class="contributors" data-bi-name="contributors">
+											<li><a href="https://github.com/Rick-Anderson" title="Rick Anderson" data-bi-name="contributorprofile"><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/Rick-Anderson.png?size=32" alt="Rick Anderson"></a></li>
+											<li><a href="https://github.com/olprod" title="olprod" data-bi-name="contributorprofile"><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/olprod.png?size=32" alt="olprod"></a></li>
+								</ul>
+							</li>
+
+						</ul>
+
+						<nav id="center-doc-outline" class="doc-outline is-hidden-desktop" data-bi-name="intopic toc" role="navigation" aria-label="En navegación de páginas">
+							<h3>En este artículo</h3>
+						</nav>
+
+
+						<!-- <content> -->
+							
+<p><span data-ttu-id="3918a-105">por <a href="https://github.com/tfitzmac" data-linktype="external">Tom FitzMacken</a></span><span class="sxs-lookup"><span data-stu-id="3918a-105">by <a href="https://github.com/tfitzmac" data-linktype="external">Tom FitzMacken</a></span></span></p>
+<blockquote>
+<p><span data-ttu-id="3918a-106">Este tutorial muestra cómo crear una base de datos en WebMatrix y cómo mostrar la base de datos en una página al usar ASP.NET Web Pages (Razor).</span><span class="sxs-lookup"><span data-stu-id="3918a-106">This tutorial shows you how to create a database in WebMatrix and how to display database data in a page when you use ASP.NET Web Pages (Razor).</span></span> <span data-ttu-id="3918a-107">Supone que ha completado la serie a través de <a href="../introducing-razor-syntax-c" data-linktype="relative-path">Introducción a la programación de ASP.NET Web Pages</a>.</span><span class="sxs-lookup"><span data-stu-id="3918a-107">It assumes you have completed the series through <a href="../introducing-razor-syntax-c" data-linktype="relative-path">Introduction to ASP.NET Web Pages Programming</a>.</span></span></p>
+<p><span data-ttu-id="3918a-108">Lo que aprenderá:</span><span class="sxs-lookup"><span data-stu-id="3918a-108">What you'll learn:</span></span></p>
+<ul>
+<li><span data-ttu-id="3918a-109">Cómo usar las herramientas de WebMatrix para crear una base de datos y tablas de base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-109">How to use WebMatrix tools to create a database and database tables.</span></span></li>
+<li><span data-ttu-id="3918a-110">Cómo usar las herramientas de WebMatrix para agregar datos a una base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-110">How to use WebMatrix tools to add data to a database.</span></span></li>
+<li><span data-ttu-id="3918a-111">Cómo mostrar los datos de la base de datos en una página.</span><span class="sxs-lookup"><span data-stu-id="3918a-111">How to display data from the database on a page.</span></span></li>
+<li><span data-ttu-id="3918a-112">Cómo ejecutar comandos SQL en ASP.NET Web Pages.</span><span class="sxs-lookup"><span data-stu-id="3918a-112">How to run SQL commands in ASP.NET Web Pages.</span></span></li>
+<li><span data-ttu-id="3918a-113">Cómo personalizar el <code>WebGrid</code> auxiliar para cambiar la presentación de datos y agregar paginación y ordenación.</span><span class="sxs-lookup"><span data-stu-id="3918a-113">How to customize the <code>WebGrid</code> helper to change the data display and to add paging and sorting.</span></span></li>
+</ul>
+<p><span data-ttu-id="3918a-114">Características y tecnologías tratadas:</span><span class="sxs-lookup"><span data-stu-id="3918a-114">Features/technologies discussed:</span></span></p>
+<ul>
+<li><span data-ttu-id="3918a-115">Herramientas de base de datos de WebMatrix.</span><span class="sxs-lookup"><span data-stu-id="3918a-115">WebMatrix database tools.</span></span></li>
+<li><span data-ttu-id="3918a-116"><code>WebGrid</code> aplicación auxiliar.</span><span class="sxs-lookup"><span data-stu-id="3918a-116"><code>WebGrid</code> helper.</span></span></li>
+</ul>
+</blockquote>
+<h2 id="what-youll-build"><span data-ttu-id="3918a-117">¿Qué va a crear</span><span class="sxs-lookup"><span data-stu-id="3918a-117">What You'll Build</span></span></h2>
+<p><span data-ttu-id="3918a-118">En el tutorial anterior, se introdujeron en ASP.NET Web Pages (<em>.cshtml</em> archivos), los conceptos básicos de la sintaxis de Razor y a las aplicaciones auxiliares.</span><span class="sxs-lookup"><span data-stu-id="3918a-118">In the previous tutorial, you were introduced to ASP.NET Web Pages (<em>.cshtml</em> files), to the basics of Razor syntax, and to helpers.</span></span> <span data-ttu-id="3918a-119">En este tutorial, empezará a crear la aplicación web real que va a usar para el resto de la serie.</span><span class="sxs-lookup"><span data-stu-id="3918a-119">In this tutorial, you'll begin creating the actual web application that you'll use for the rest of the series.</span></span> <span data-ttu-id="3918a-120">La aplicación es una aplicación de película simple que le permite ver, agregar, cambiar y eliminar información sobre películas.</span><span class="sxs-lookup"><span data-stu-id="3918a-120">The app is a simple movie application that lets you view, add, change, and delete information about movies.</span></span></p>
+<p><span data-ttu-id="3918a-121">Cuando haya terminado con este tutorial, podrá ver una lista de películas que es similar a esta página:</span><span class="sxs-lookup"><span data-stu-id="3918a-121">When you're done with this tutorial, you'll be able to view a movie listing that looks like this page:</span></span></p>
+<p><img src="displaying-data/_static/image1.png" alt="Pantalla de WebGrid que incluye los parámetros establecidos en los nombres de clase CSS" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-123">Pero para empezar, debe crear una base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-123">But to begin, you have to create a database.</span></span></p>
+<h2 id="a-very-brief-introduction-to-databases"><span data-ttu-id="3918a-124">Una introducción breve a las bases de datos</span><span class="sxs-lookup"><span data-stu-id="3918a-124">A Very Brief Introduction to Databases</span></span></h2>
+<p><span data-ttu-id="3918a-125">Este tutorial le ofrece solo la briefest Introducción a las bases de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-125">This tutorial will provide only the briefest introduction to databases.</span></span> <span data-ttu-id="3918a-126">Si tiene experiencia en bases de datos, puede omitir esta sección corto.</span><span class="sxs-lookup"><span data-stu-id="3918a-126">If you have database experience, you can skip this short section.</span></span></p>
+<p><span data-ttu-id="3918a-127">Una base de datos contiene una o varias tablas que contienen información — por ejemplo, las tablas para los clientes, pedidos y proveedores, o para los estudiantes, profesores, clases y calificaciones.</span><span class="sxs-lookup"><span data-stu-id="3918a-127">A database contains one or more tables that contain information — for example, tables for customers, orders, and vendors, or for students, teachers, classes, and grades.</span></span> <span data-ttu-id="3918a-128">Estructuralmente, una tabla de base de datos es similar a una hoja de cálculo.</span><span class="sxs-lookup"><span data-stu-id="3918a-128">Structurally, a database table is like a spreadsheet.</span></span> <span data-ttu-id="3918a-129">Imagine una libreta de direcciones típico.</span><span class="sxs-lookup"><span data-stu-id="3918a-129">Imagine a typical address book.</span></span> <span data-ttu-id="3918a-130">Para cada entrada de la libreta de direcciones (es decir, para cada persona) tiene varias piezas de información como el nombre, apellido, dirección, dirección de correo electrónico y número de teléfono.</span><span class="sxs-lookup"><span data-stu-id="3918a-130">For each entry in the address book (that is, for each person) you have several pieces of information such as first name, last name, address, email address, and phone number.</span></span></p>
+<p><img src="displaying-data/_static/image2.png" alt="Tabla de base de datos de ejemplo como una cuadrícula simple" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-132">(Las filas se conocen a veces como <em>registros</em>, y las columnas se conocen a veces como <em>campos</em>.)</span><span class="sxs-lookup"><span data-stu-id="3918a-132">(Rows are sometimes referred to as <em>records</em>, and columns are sometimes referred to as <em>fields</em>.)</span></span></p>
+<p><span data-ttu-id="3918a-133">Para la mayoría de las tablas de base de datos, la tabla debe tener una columna que contiene un valor único, como un número de cliente, número de cuenta y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="3918a-133">For most database tables, the table has to have a column that contains a unique value, like a customer number, account number, and so on.</span></span> <span data-ttu-id="3918a-134">Este valor se conoce como la tabla <em>clave principal</em>, y se usa para identificar cada fila de la tabla.</span><span class="sxs-lookup"><span data-stu-id="3918a-134">This value is known as the table's <em>primary key</em>, and you use it to identify each row in the table.</span></span> <span data-ttu-id="3918a-135">En el ejemplo, la columna de identificador es la clave principal de la libreta de direcciones que se muestra en el ejemplo anterior.</span><span class="sxs-lookup"><span data-stu-id="3918a-135">In the example, the ID column is the primary key for the address book shown in the previous example.</span></span></p>
+<p><span data-ttu-id="3918a-136">Gran parte del trabajo que hacer en las aplicaciones web consta de al leer información de la base de datos y mostrarlos en una página.</span><span class="sxs-lookup"><span data-stu-id="3918a-136">Much of the work you do in web applications consists of reading information out of the database and displaying it on a page.</span></span> <span data-ttu-id="3918a-137">Con frecuencia, también podrá recopilar información de usuarios y agregarlo a una base de datos, o podrá modificar los registros que ya están en la base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-137">You'll also often gather information from users and add it to a database, or you'll modify records that are already in the database.</span></span> <span data-ttu-id="3918a-138">(Hablaremos sobre todas estas operaciones en el transcurso de este conjunto del tutorial.)</span><span class="sxs-lookup"><span data-stu-id="3918a-138">(We'll cover all of these operations in the course of this tutorial set.)</span></span></p>
+<p><span data-ttu-id="3918a-139">Trabajo de base de datos puede ser extremadamente complejo y puede requerir conocimientos especializados.</span><span class="sxs-lookup"><span data-stu-id="3918a-139">Database work can be enormously complex and can require specialized knowledge.</span></span> <span data-ttu-id="3918a-140">Sin embargo, para esta serie de tutoriales, tiene que conocer solo de los conceptos básicos, que todo se explicará a medida que avance.</span><span class="sxs-lookup"><span data-stu-id="3918a-140">For this tutorial set, though, you have to understand only basic concepts, which will all be explained as you go.</span></span></p>
+<h2 id="creating-a-database"><span data-ttu-id="3918a-141">Crear una base de datos</span><span class="sxs-lookup"><span data-stu-id="3918a-141">Creating a Database</span></span></h2>
+<p><span data-ttu-id="3918a-142">WebMatrix incluye herramientas que facilitan la creación de una base de datos y crear tablas en la base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-142">WebMatrix includes tools that make it easy to create a database and to create tables in the database.</span></span> <span data-ttu-id="3918a-143">(La estructura de una base de datos se conoce como la base de datos <em>esquema</em>.) Para este conjunto del tutorial, creará una base de datos que contiene solo una tabla de — películas.</span><span class="sxs-lookup"><span data-stu-id="3918a-143">(The structure of a database is referred to as the database's <em>schema</em>.) For this tutorial set, you'll create a database that has only one table in it — Movies.</span></span></p>
+<p><span data-ttu-id="3918a-144">Abra WebMatrix si aún no lo ha hecho y abra el sitio WebPagesMovies que creó en el tutorial anterior.</span><span class="sxs-lookup"><span data-stu-id="3918a-144">Open WebMatrix if you haven't already done so, and open the WebPagesMovies site that you created in the previous tutorial.</span></span></p>
+<p><span data-ttu-id="3918a-145">En el panel izquierdo, haga clic en el <strong>base de datos</strong> área de trabajo.</span><span class="sxs-lookup"><span data-stu-id="3918a-145">In the left pane, click the <strong>Database</strong> workspace.</span></span></p>
+<p><img src="displaying-data/_static/image3.png" alt="Pestaña de área de trabajo de la base de datos de WebMatrix" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-147">Los cambios de la cinta de opciones para mostrar las tareas relacionadas con la base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-147">The ribbon changes to show database-related tasks.</span></span> <span data-ttu-id="3918a-148">En la cinta de opciones, haga clic en <strong>nueva base de datos</strong>.</span><span class="sxs-lookup"><span data-stu-id="3918a-148">In the ribbon, click <strong>New Database</strong>.</span></span></p>
+<p><img src="displaying-data/_static/image4.png" alt="Botón 'Nueva base de datos' en la cinta de opciones de WebMatrix" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-150">WebMatrix crea una base de datos de SQL Server CE (un <em>.sdf</em> archivo) que tiene el mismo nombre que su sitio — <em>WebPagesMovies.sdf</em>.</span><span class="sxs-lookup"><span data-stu-id="3918a-150">WebMatrix creates a SQL Server CE database (an <em>.sdf</em> file) that has the same name as your site — <em>WebPagesMovies.sdf</em>.</span></span> <span data-ttu-id="3918a-151">(No hacer esto aquí, pero puede cambiar el nombre del archivo al que desee, siempre y cuando tenga un <em>.sdf</em> extensión.)</span><span class="sxs-lookup"><span data-stu-id="3918a-151">(You won't do this here, but you can rename the file to anything you like, as long as it has an <em>.sdf</em> extension.)</span></span></p>
+<h2 id="creating-a-table"><span data-ttu-id="3918a-152">Creación de una tabla</span><span class="sxs-lookup"><span data-stu-id="3918a-152">Creating a Table</span></span></h2>
+<p><span data-ttu-id="3918a-153">En la cinta de opciones, haga clic en <strong>nueva tabla</strong>.</span><span class="sxs-lookup"><span data-stu-id="3918a-153">In the ribbon, click <strong>New Table</strong>.</span></span> <span data-ttu-id="3918a-154">WebMatrix abre el Diseñador de tablas en una nueva pestaña. (Si la opción de nueva tabla no está disponible, asegúrese de que la nueva base de datos está seleccionado en la vista de árbol de la izquierda.)</span><span class="sxs-lookup"><span data-stu-id="3918a-154">WebMatrix opens the table designer in a new tab. (If the New Table option isn't available, make sure that the new database is selected in the tree view on the left.)</span></span></p>
+<p><img src="displaying-data/_static/image5.png" alt="Botón &quot;Nueva tabla&quot; en la cinta de opciones de WebMatrix" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-156">En el cuadro de texto en la parte superior (donde la marca de agua dice &quot;Escriba el nombre de la tabla&quot;), escriba &quot;Movies&quot;.</span><span class="sxs-lookup"><span data-stu-id="3918a-156">In the text box at the top (where the watermark says &quot;Enter table name&quot;), enter &quot;Movies&quot;.</span></span></p>
+<p><img src="displaying-data/_static/image6.png" alt="Escribir un nombre de tabla en el Diseñador de la base de datos de WebMatrix" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-158">El panel debajo del nombre de tabla es donde se definen las columnas individuales.</span><span class="sxs-lookup"><span data-stu-id="3918a-158">The pane underneath the table name is where you define individual columns.</span></span> <span data-ttu-id="3918a-159">Para el <em>películas</em> tabla en este tutorial, creará solo unas pocas columnas: <em>Id. de</em>, <em>título</em>, <em>género</em>, y <em>año</em>.</span><span class="sxs-lookup"><span data-stu-id="3918a-159">For the <em>Movies</em> table in this tutorial, you'll create only a few columns: <em>ID</em>, <em>Title</em>, <em>Genre</em>, and <em>Year</em>.</span></span></p>
+<p><span data-ttu-id="3918a-160">En el <strong>nombre</strong> , escriba &quot;ID&quot;.</span><span class="sxs-lookup"><span data-stu-id="3918a-160">In the <strong>Name</strong> box, enter &quot;ID&quot;.</span></span> <span data-ttu-id="3918a-161">Si introduce un valor aquí activa todos los controles para la nueva columna.</span><span class="sxs-lookup"><span data-stu-id="3918a-161">Entering a value here activates all the controls for the new column.</span></span></p>
+<p><span data-ttu-id="3918a-162">Tabulador para ir a la <strong>tipo de datos</strong> lista y elija <strong>int</strong>. Este valor especifica que la columna de identificador contendrá datos enteros (número).</span><span class="sxs-lookup"><span data-stu-id="3918a-162">Tab to the <strong>Data Type</strong> list and choose <strong>int</strong>. This value specifies that the ID column will contain integer (number) data.</span></span></p>
+<div class="NOTE">
+<p>Note</p>
+<p><span data-ttu-id="3918a-163">No lo llamamos cualquier más aquí (mucho), pero puede usar gestos de teclado estándares de Windows para navegar en esta cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="3918a-163">We won't call it out any more here (much), but you can use standard Windows keyboard gestures to navigate in this grid.</span></span> <span data-ttu-id="3918a-164">Por ejemplo, puede cambiar entre los campos, simplemente puede empezar a escribir con el fin de seleccionar un elemento en una lista y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="3918a-164">For example, you can tab between fields, you can just start typing in order to select an item in a list, and so on.</span></span></p>
+</div>
+<p><span data-ttu-id="3918a-165">Tabulador, cambie el <strong>Default Value</strong> cuadro (es decir, déjelo en blanco).</span><span class="sxs-lookup"><span data-stu-id="3918a-165">Tab past the <strong>Default Value</strong> box (that is, leave it blank).</span></span> <span data-ttu-id="3918a-166">Tabulador para ir a la <strong>es la clave principal</strong> casilla y selecciónelo.</span><span class="sxs-lookup"><span data-stu-id="3918a-166">Tab to the <strong>Is Primary Key</strong> check box and select it.</span></span> <span data-ttu-id="3918a-167">Esta opción indica a la base de datos que el <em>ID</em> columna contendrá los datos que identifica las filas individuales.</span><span class="sxs-lookup"><span data-stu-id="3918a-167">This option tells the database that the <em>ID</em> column will contain the data that identifies individual rows.</span></span> <span data-ttu-id="3918a-168">(Es decir, cada fila tendrá un valor único en la columna de identificador que puede usar para encontrar esa fila.)</span><span class="sxs-lookup"><span data-stu-id="3918a-168">(That is, each row will have a unique value in the ID column that you can use to find that row.)</span></span></p>
+<p><span data-ttu-id="3918a-169">Elija la <strong>identidad</strong> opción.</span><span class="sxs-lookup"><span data-stu-id="3918a-169">Choose the <strong>Is Identity</strong> option.</span></span> <span data-ttu-id="3918a-170">Esta opción indica a la base de datos que debe generar automáticamente el siguiente número secuencial para cada nueva fila.</span><span class="sxs-lookup"><span data-stu-id="3918a-170">This option tells the database that it should automatically generate the next sequential number for each new row.</span></span> <span data-ttu-id="3918a-171">(El <strong>identidad</strong> opción solo si también seleccionó la <strong>es la clave principal</strong> opción.)</span><span class="sxs-lookup"><span data-stu-id="3918a-171">(The <strong>Is Identity</strong> option works only if you've also selected the <strong>Is Primary Key</strong> option.)</span></span></p>
+<p><span data-ttu-id="3918a-172">Haga clic en la siguiente fila de cuadrícula, o presione la tecla Tab dos veces para finalizar la fila actual.</span><span class="sxs-lookup"><span data-stu-id="3918a-172">Click in the next grid row, or press Tab twice to finish the current row.</span></span> <span data-ttu-id="3918a-173">Cualquier movimiento guarda la fila actual e inicia la siguiente.</span><span class="sxs-lookup"><span data-stu-id="3918a-173">Either gesture saves the current row and starts the next one.</span></span> <span data-ttu-id="3918a-174">Tenga en cuenta que el <strong>Default Value</strong> columna ahora dice <strong>Null</strong>.</span><span class="sxs-lookup"><span data-stu-id="3918a-174">Notice that the <strong>Default Value</strong> column now says <strong>Null</strong>.</span></span> <span data-ttu-id="3918a-175">(Null es el valor predeterminado para el valor predeterminado, por así decirlo.)</span><span class="sxs-lookup"><span data-stu-id="3918a-175">(Null is the default value for the default value, so to speak.)</span></span></p>
+<p><span data-ttu-id="3918a-176">Cuando haya terminado de definir el nuevo <strong>ID</strong> columna, el diseñador tendrá un aspecto similar de esta ilustración:</span><span class="sxs-lookup"><span data-stu-id="3918a-176">When you've finished defining the new <strong>ID</strong> column, the designer will look like this illustration:</span></span></p>
+<p><img src="displaying-data/_static/image7.png" alt="Diseñador de la base de datos de WebMatrix después de definir la columna de Id. de la tabla de películas" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-178">Para crear la columna siguiente, haga clic en el cuadro en el <strong>nombre</strong> columna.</span><span class="sxs-lookup"><span data-stu-id="3918a-178">To create the next column, click in the box in the <strong>Name</strong> column.</span></span> <span data-ttu-id="3918a-179">Escriba &quot;Title&quot; para la columna y, a continuación, seleccione <strong>nvarchar</strong> para el <strong>tipo de datos</strong> valor.</span><span class="sxs-lookup"><span data-stu-id="3918a-179">Enter &quot;Title&quot; for the column and then select <strong>nvarchar</strong> for the <strong>Data Type</strong> value.</span></span> <span data-ttu-id="3918a-180">La parte &quot;var&quot; de <strong>nvarchar</strong> indica a la base de datos que los datos de esta columna será una cadena cuyo tamaño puede variar entre los registros.</span><span class="sxs-lookup"><span data-stu-id="3918a-180">The &quot;var&quot; part of <strong>nvarchar</strong> tells the database that the data for this column will be a string whose size might vary from record to record.</span></span> <span data-ttu-id="3918a-181">(El prefijo &quot;n&quot; representa &quot;national&quot;, lo que indica que el campo puede contener datos de caracteres para cualquier alfabeto o el sistema de escritura, es decir, el campo contiene datos Unicode.)</span><span class="sxs-lookup"><span data-stu-id="3918a-181">(The &quot;n&quot; prefix represents &quot;national,&quot; which indicates that the field can hold character data for any alphabet or writing system — that is, the field holds Unicode data.)</span></span></p>
+<p><span data-ttu-id="3918a-182">Cuando se elige <strong>nvarchar</strong>, aparece otro cuadro donde puede especificar la longitud máxima para el campo.</span><span class="sxs-lookup"><span data-stu-id="3918a-182">When you choose <strong>nvarchar</strong>, another box appears where you can enter the maximum length for the field.</span></span> <span data-ttu-id="3918a-183">Escriba 50, en la suposición de que ningún título de la película que se va a trabajar en este tutorial será más de 50 caracteres.</span><span class="sxs-lookup"><span data-stu-id="3918a-183">Enter 50, on the assumption that no movie title that you'll work with in this tutorial will be longer than 50 characters.</span></span></p>
+<p><span data-ttu-id="3918a-184">Omitir <strong>Default Value</strong> y desactive el <strong>permitir valores nulos</strong> opción.</span><span class="sxs-lookup"><span data-stu-id="3918a-184">Skip <strong>Default Value</strong> and clear the <strong>Allow Nulls</strong> option.</span></span> <span data-ttu-id="3918a-185">No desea permitir alguna película debe especificarse en la base de datos que no tiene un título de la base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-185">You don't want the database to allow any movies to be entered into the database that don't have a title.</span></span></p>
+<p><span data-ttu-id="3918a-186">Cuando haya terminado y desplazarse a la fila siguiente, el diseñador se parecerá a esta ilustración:</span><span class="sxs-lookup"><span data-stu-id="3918a-186">When you're done and move to the next row, the designer looks like this illustration:</span></span></p>
+<p><img src="displaying-data/_static/image8.png" alt="Diseñador de la base de datos de WebMatrix después de definir la columna de título de la tabla de películas" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-188">Repita estos pasos para crear una columna denominada &quot;Género&quot;, excepto para la longitud, establézcalo en sólo 30.</span><span class="sxs-lookup"><span data-stu-id="3918a-188">Repeat these steps to create a column named &quot;Genre&quot;, except for the length, set it to just 30.</span></span></p>
+<p><span data-ttu-id="3918a-189">Crear otra columna denominada &quot;Año&quot;.</span><span class="sxs-lookup"><span data-stu-id="3918a-189">Create another column named &quot;Year.&quot;</span></span> <span data-ttu-id="3918a-190">Para el tipo de datos, elija <strong>nchar</strong> (no <strong>nvarchar</strong>) y establecer la longitud en 4.</span><span class="sxs-lookup"><span data-stu-id="3918a-190">For the data type, choose <strong>nchar</strong> (not <strong>nvarchar</strong>) and set the length to 4.</span></span> <span data-ttu-id="3918a-191">Para el año, va a usar un número de 4 dígitos, como &quot;1995&quot; o &quot;2010&quot;, por lo que no requieren una columna de tamaño variable.</span><span class="sxs-lookup"><span data-stu-id="3918a-191">For the year, you're going to use a 4-digit number like &quot;1995&quot; or &quot;2010&quot;, so you don't require a variable-sized column.</span></span></p>
+<p><span data-ttu-id="3918a-192">Este es el aspecto del diseño finalizado:</span><span class="sxs-lookup"><span data-stu-id="3918a-192">Here's what the finished design looks like:</span></span></p>
+<p><img src="displaying-data/_static/image9.png" alt="Diseñador de base de datos de WebMatrix después de que todos los campos definidos para la tabla de películas" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-194">Presione Ctrl + S o haga clic en el <strong>guardar</strong> botón en la barra de herramientas de acceso rápido.</span><span class="sxs-lookup"><span data-stu-id="3918a-194">Press Ctrl+S or click the <strong>Save</strong> button in the Quick Access toolbar.</span></span> <span data-ttu-id="3918a-195">Cierre el Diseñador de la base de datos al cerrar la pestaña.</span><span class="sxs-lookup"><span data-stu-id="3918a-195">Close the database designer by closing the tab.</span></span></p>
+<h2 id="adding-some-example-data"><span data-ttu-id="3918a-196">Agregando algunos datos de ejemplo</span><span class="sxs-lookup"><span data-stu-id="3918a-196">Adding Some Example Data</span></span></h2>
+<p><span data-ttu-id="3918a-197">Más adelante en esta serie de tutoriales, creará una página donde puede especificar nuevas películas en un formulario.</span><span class="sxs-lookup"><span data-stu-id="3918a-197">Later in this tutorial series you'll create a page where you can enter new movies in a form.</span></span> <span data-ttu-id="3918a-198">Por ahora, sin embargo, puede agregar algunos datos de ejemplo que, a continuación, se pueden mostrar en una página.</span><span class="sxs-lookup"><span data-stu-id="3918a-198">For now, however, you can add some example data that you can then display on a page.</span></span></p>
+<p><span data-ttu-id="3918a-199">En el <strong>base de datos</strong> área de trabajo de WebMatrix, observe que hay un árbol que muestra la <em>.sdf</em> archivo que creó anteriormente.</span><span class="sxs-lookup"><span data-stu-id="3918a-199">In the <strong>Database</strong> workspace in WebMatrix, notice that there's a tree that shows you the <em>.sdf</em> file you created earlier.</span></span> <span data-ttu-id="3918a-200">Abra el nodo para el nuevo <em>.sdf</em> archivo y, a continuación, abra el <strong>tablas</strong> nodo.</span><span class="sxs-lookup"><span data-stu-id="3918a-200">Open the node for your new <em>.sdf</em> file, and then open the <strong>Tables</strong> node.</span></span></p>
+<p><img src="displaying-data/_static/image10.png" alt="Área de trabajo de base de datos de WebMatrix con árbol abierto a la tabla de películas" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-202">Haga clic en el <strong>películas</strong> nodo y, a continuación, elija <strong>datos</strong>.</span><span class="sxs-lookup"><span data-stu-id="3918a-202">Right-click the <strong>Movies</strong> node and then choose <strong>Data</strong>.</span></span> <span data-ttu-id="3918a-203">WebMatrix abre una cuadrícula donde puede escribir los datos para el <em>películas</em> tabla:</span><span class="sxs-lookup"><span data-stu-id="3918a-203">WebMatrix opens a grid where you can enter data for the <em>Movies</em> table:</span></span></p>
+<p><img src="displaying-data/_static/image11.png" alt="Cuadrícula de entrada de la base de datos en WebMatrix (vacío)" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-205">Haga clic en el <strong>título</strong> columna y escriba &quot;Cuando Harry cumplen Sally&quot;.</span><span class="sxs-lookup"><span data-stu-id="3918a-205">Click the <strong>Title</strong> column and enter &quot;When Harry Met Sally&quot;.</span></span> <span data-ttu-id="3918a-206">Mover a la <strong>género</strong> columna (que puede utilizar la tecla Tab) y escriba &quot;Románticos Comedia&quot;.</span><span class="sxs-lookup"><span data-stu-id="3918a-206">Move to the <strong>Genre</strong> column (you can use the Tab key) and enter &quot;Romantic Comedy&quot;.</span></span> <span data-ttu-id="3918a-207">Mover a la <strong>año</strong> columna y escriba &quot;1989&quot;:</span><span class="sxs-lookup"><span data-stu-id="3918a-207">Move to the <strong>Year</strong> column and enter &quot;1989&quot;:</span></span></p>
+<p><img src="displaying-data/_static/image12.png" alt="Cuadrícula de entrada de base de datos con un registro en WebMatrix" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-209">Presione ENTRAR y WebMatrix guarda la nueva película.</span><span class="sxs-lookup"><span data-stu-id="3918a-209">Press Enter, and WebMatrix saves the new movie.</span></span> <span data-ttu-id="3918a-210">Tenga en cuenta que el <strong>ID</strong> columna ha sido rellenada.</span><span class="sxs-lookup"><span data-stu-id="3918a-210">Notice that the <strong>ID</strong> column has been filled in.</span></span></p>
+<p><img src="displaying-data/_static/image13.png" alt="Cuadrícula de entrada de base de datos con un único registro y el identificador generado automáticamente en WebMatrix" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-212">Escriba otra película (por ejemplo, &quot;pasado con el viento&quot;, &quot;Drama&quot;, &quot;1939&quot;).</span><span class="sxs-lookup"><span data-stu-id="3918a-212">Enter another movie (for example, &quot;Gone with the Wind&quot;, &quot;Drama&quot;, &quot;1939&quot;).</span></span> <span data-ttu-id="3918a-213">Se rellena la columna Id. nuevo:</span><span class="sxs-lookup"><span data-stu-id="3918a-213">The ID column is filled in again:</span></span></p>
+<p><img src="displaying-data/_static/image14.png" alt="Cuadrícula de entrada de base de datos en WebMatrix con dos registros y los identificadores generados automáticamente" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-215">Escriba una película terceros (por ejemplo, &quot;Ghostbusters&quot;, &quot;Comedia&quot;).</span><span class="sxs-lookup"><span data-stu-id="3918a-215">Enter a third movie (for example, &quot;Ghostbusters&quot;, &quot;Comedy&quot;).</span></span> <span data-ttu-id="3918a-216">Como experimento, deje el <strong>año</strong> columna en blanco y, a continuación, presione ENTRAR.</span><span class="sxs-lookup"><span data-stu-id="3918a-216">As an experiment, leave the <strong>Year</strong> column blank and then press Enter.</span></span> <span data-ttu-id="3918a-217">Dado que anula la selección de la <strong>permitir valores nulos</strong> opción, la base de datos muestra un error:</span><span class="sxs-lookup"><span data-stu-id="3918a-217">Because you unselected the <strong>Allow Nulls</strong> option, the database shows an error:</span></span></p>
+<p><img src="displaying-data/_static/image15.png" alt="Error de 'Datos no válidos' muestra si se deja en blanco el valor de una columna necesaria" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-219">Haga clic en <strong>Aceptar</strong> para volver atrás y corregir la entrada (el año para &quot;Ghostbusters&quot; es 1984) y, a continuación, presione ENTRAR.</span><span class="sxs-lookup"><span data-stu-id="3918a-219">Click <strong>OK</strong> to go back and fix the entry (the year for &quot;Ghostbusters&quot; is 1984), and then press Enter.</span></span></p>
+<p><span data-ttu-id="3918a-220">Rellene varias películas hasta que haya 8 o al menos.</span><span class="sxs-lookup"><span data-stu-id="3918a-220">Fill in several movies until you have 8 or so.</span></span> <span data-ttu-id="3918a-221">(Escriba 8 resulta más fácil trabajar con paginación más adelante.</span><span class="sxs-lookup"><span data-stu-id="3918a-221">(Entering 8 makes it easier to work with paging later.</span></span> <span data-ttu-id="3918a-222">Pero si es demasiado elevado, escriba algunas por ahora). No importan los datos reales.</span><span class="sxs-lookup"><span data-stu-id="3918a-222">But if that's too many, enter just a few for now.) The actual data doesn't matter.</span></span></p>
+<p><img src="displaying-data/_static/image16.png" alt="Cuadrícula de entrada de base de datos en WebMatrix con ambos registros" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-224">Si ha especificado todas las películas sin errores, los valores de identificador son secuenciales.</span><span class="sxs-lookup"><span data-stu-id="3918a-224">If you entered all the movies without any errors, the ID values are sequential.</span></span> <span data-ttu-id="3918a-225">Si intenta guardar un registro de película incompletos, los números de identificador no sea secuenciales.</span><span class="sxs-lookup"><span data-stu-id="3918a-225">If you tried to save an incomplete movie record, the ID numbers might not be sequential.</span></span> <span data-ttu-id="3918a-226">En caso afirmativo, eso está bien.</span><span class="sxs-lookup"><span data-stu-id="3918a-226">If so, that's okay.</span></span> <span data-ttu-id="3918a-227">Los números no tienen ningún significado inherente y lo único que es importante es que son únicos en el <em>películas</em> tabla.</span><span class="sxs-lookup"><span data-stu-id="3918a-227">The numbers don't have any inherent meaning, and the only thing that's important is that they're unique in the <em>Movies</em> table.</span></span></p>
+<p><span data-ttu-id="3918a-228">Cierre la pestaña que contiene el Diseñador de la base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-228">Close the tab that contains the database designer.</span></span></p>
+<p><span data-ttu-id="3918a-229">Ahora puede activar para mostrar los datos en una página web.</span><span class="sxs-lookup"><span data-stu-id="3918a-229">Now you can turn to displaying this data on a web page.</span></span></p>
+<h2 id="displaying-data-in-a-page-by-using-the-webgrid-helper"><span data-ttu-id="3918a-230">Mostrar datos en una página mediante el uso de la aplicación auxiliar WebGrid</span><span class="sxs-lookup"><span data-stu-id="3918a-230">Displaying Data in a Page by Using the WebGrid Helper</span></span></h2>
+<p><span data-ttu-id="3918a-231">Para mostrar datos en una página, que va a usar el <code>WebGrid</code> auxiliar.</span><span class="sxs-lookup"><span data-stu-id="3918a-231">To display data in a page, you're going to use the <code>WebGrid</code> helper.</span></span> <span data-ttu-id="3918a-232">Esta aplicación auxiliar genera una pantalla en una cuadrícula o una tabla (las filas y columnas).</span><span class="sxs-lookup"><span data-stu-id="3918a-232">This helper produces a display in a grid or table (rows and columns).</span></span> <span data-ttu-id="3918a-233">Como verá, será capaz de restringir la cuadrícula con formato y otras características.</span><span class="sxs-lookup"><span data-stu-id="3918a-233">As you'll see, you'll be able refine the grid with formatting and other features.</span></span></p>
+<p><span data-ttu-id="3918a-234">Para ejecutar la cuadrícula, tendrá que escribir unas cuantas líneas de código.</span><span class="sxs-lookup"><span data-stu-id="3918a-234">To run the grid, you'll have to write a few lines of code.</span></span> <span data-ttu-id="3918a-235">Estas pocas líneas actuará como un tipo de modelo para casi todo el acceso a los datos que en este tutorial.</span><span class="sxs-lookup"><span data-stu-id="3918a-235">These few lines will serve as a kind of pattern for almost all of the data access that you do in this tutorial.</span></span></p>
+<div class="NOTE">
+<p>Note</p>
+<p><span data-ttu-id="3918a-236">Tiene muchas opciones para mostrar los datos en una página; en realidad el <code>WebGrid</code> auxiliar es solo uno.</span><span class="sxs-lookup"><span data-stu-id="3918a-236">You actually have many options for displaying data on a page; the <code>WebGrid</code> helper is just one.</span></span> <span data-ttu-id="3918a-237">Se eligió para este tutorial porque es la manera más fácil para mostrar los datos y porque es bastante flexible.</span><span class="sxs-lookup"><span data-stu-id="3918a-237">We chose it for this tutorial because it's the easiest way to display data and because it's reasonably flexible.</span></span> <span data-ttu-id="3918a-238">En el conjunto del tutorial siguiente, verá cómo usar la forma &quot;manual&quot; más para trabajar con datos en la página, que ofrece un control más directo sobre cómo mostrar los datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-238">In the next tutorial set, you'll see how to use a more &quot;manual&quot; way to work with data in the page, which gives you more direct control over how to display the data.</span></span></p>
+</div>
+<p><span data-ttu-id="3918a-239">En el panel izquierdo en WebMatrix, haga clic en el <strong>archivos</strong> área de trabajo.</span><span class="sxs-lookup"><span data-stu-id="3918a-239">In the left pane in WebMatrix, click the <strong>Files</strong> workspace.</span></span></p>
+<p><span data-ttu-id="3918a-240">Es la nueva base de datos que creó en el <em>aplicación_datos</em> carpeta.</span><span class="sxs-lookup"><span data-stu-id="3918a-240">The new database you created is in the <em>App_Data</em> folder.</span></span> <span data-ttu-id="3918a-241">Si aún no existe la carpeta, WebMatrix creó para la nueva base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-241">If the folder didn't already exist, WebMatrix created it for your new database.</span></span> <span data-ttu-id="3918a-242">(Podría haber existido la carpeta si había instalado previamente las aplicaciones auxiliares).</span><span class="sxs-lookup"><span data-stu-id="3918a-242">(The folder might have existed if you'd previously installed helpers.)</span></span></p>
+<p><span data-ttu-id="3918a-243">En la vista de árbol, seleccione la raíz del sitio Web.</span><span class="sxs-lookup"><span data-stu-id="3918a-243">In the tree view, select the root of the website.</span></span> <span data-ttu-id="3918a-244">Debe seleccionar la raíz del sitio Web; en caso contrario, el nuevo archivo podría agregarse a la aplicación_carpeta de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-244">You must select the root of the website; otherwise, the new file might be added to the App_Data folder.</span></span></p>
+<p><span data-ttu-id="3918a-245">En la cinta de opciones, haga clic en <strong>New</strong>.</span><span class="sxs-lookup"><span data-stu-id="3918a-245">In the ribbon, click <strong>New</strong>.</span></span> <span data-ttu-id="3918a-246">En el <strong>elegir un tipo de archivo</strong> , seleccione <strong>CSHTML</strong>.</span><span class="sxs-lookup"><span data-stu-id="3918a-246">In the <strong>Choose a File Type</strong> box, choose <strong>CSHTML</strong>.</span></span></p>
+<p><span data-ttu-id="3918a-247">En el <strong>nombre</strong> cuadro, asigne el nombre de la nueva página &quot;Movies.cshtml&quot;:</span><span class="sxs-lookup"><span data-stu-id="3918a-247">In the <strong>Name</strong> box, name the new page &quot;Movies.cshtml&quot;:</span></span></p>
+<p><img src="displaying-data/_static/image17.png" alt="Cuadro de diálogo &quot;Elegir un tipo de archivo&quot; que muestra la página de 'películas;'" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-249">Haga clic en el <strong>Aceptar</strong> botón.</span><span class="sxs-lookup"><span data-stu-id="3918a-249">Click the <strong>OK</strong> button.</span></span> <span data-ttu-id="3918a-250">WebMatrix abre un nuevo archivo con algunos elementos esqueletos en ella.</span><span class="sxs-lookup"><span data-stu-id="3918a-250">WebMatrix opens a new file with some skeleton elements in it.</span></span> <span data-ttu-id="3918a-251">En primer lugar deberá escribir algo de código para obtener los datos de la base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-251">First you'll write some code to go get the data from the database.</span></span> <span data-ttu-id="3918a-252">A continuación, agregará el marcado en la página para mostrar los datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-252">Then you'll add markup to the page to actually display the data.</span></span></p>
+<h3 id="writing-the-data-query-code"><span data-ttu-id="3918a-253">Escribir el código de la consulta de datos</span><span class="sxs-lookup"><span data-stu-id="3918a-253">Writing the Data Query Code</span></span></h3>
+<p><span data-ttu-id="3918a-254">En la parte superior de la página, entre el <code>@{</code> y <code>}</code> caracteres, escriba el código siguiente.</span><span class="sxs-lookup"><span data-stu-id="3918a-254">At the top of the page, between the <code>@{</code> and <code>}</code> characters, enter the following code.</span></span> <span data-ttu-id="3918a-255">(Asegúrese de que escriba este código entre las llaves de cierre y apertura).</span><span class="sxs-lookup"><span data-stu-id="3918a-255">(Make sure that you enter this code between the opening and closing braces.)</span></span></p>
+<pre><code class="lang-csharp" name="Main">var db = Database.Open(&quot;WebPagesMovies&quot;);
+var selectedData = db.Query(&quot;SELECT * FROM Movies&quot;);
+var grid = new WebGrid(source: selectedData);
+</code></pre>
+<p><span data-ttu-id="3918a-256">La primera línea abre la base de datos que creó anteriormente, que siempre es el primer paso antes de hacer algo con la base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-256">The first line opens the database that you created earlier, which is always the first step before doing something with the database.</span></span> <span data-ttu-id="3918a-257">Indica el <code>Database.Open</code> nombre del método de la base de datos para abrir.</span><span class="sxs-lookup"><span data-stu-id="3918a-257">You tell the <code>Database.Open</code> method name of the database to open.</span></span> <span data-ttu-id="3918a-258">Tenga en cuenta que no incluye <em>.sdf</em> en el nombre.</span><span class="sxs-lookup"><span data-stu-id="3918a-258">Notice that you don't include <em>.sdf</em> in the name.</span></span> <span data-ttu-id="3918a-259">El <code>Open</code> método supone que está buscando un <em>.sdf</em> archivo (es decir, <em>WebPagesMovies.sdf</em>) y que la <em>.sdf</em> archivo se encuentra en la <em>aplicación_ Datos</em> carpeta.</span><span class="sxs-lookup"><span data-stu-id="3918a-259">The <code>Open</code> method assumes that it's looking for an <em>.sdf</em> file (that is, <em>WebPagesMovies.sdf</em>) and that the <em>.sdf</em> file is in the <em>App_Data</em> folder.</span></span> <span data-ttu-id="3918a-260">(Anteriormente mencionamos que el <em>aplicación_datos</em> carpeta está reservada; este escenario es uno de los lugares donde ASP.NET hace suposiciones sobre ese nombre.)</span><span class="sxs-lookup"><span data-stu-id="3918a-260">(Earlier we noted that the <em>App_Data</em> folder is reserved; this scenario is one of the places where ASP.NET makes assumptions about that name.)</span></span></p>
+<p><span data-ttu-id="3918a-261">Cuando se abre la base de datos, se coloca una referencia a él en la variable denominada <code>db</code>.</span><span class="sxs-lookup"><span data-stu-id="3918a-261">When the database is opened, a reference to it is put into the variable named <code>db</code>.</span></span> <span data-ttu-id="3918a-262">(Lo que podría tener cualquier nombre.) El <code>db</code> variable es cómo terminará interactuar con la base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-262">(Which could be named anything.) The <code>db</code> variable is how you'll end up interacting with the database.</span></span></p>
+<p><span data-ttu-id="3918a-263">La segunda línea realmente captura los datos de la base de datos mediante el uso de la <code>Query</code> método.</span><span class="sxs-lookup"><span data-stu-id="3918a-263">The second line actually fetches the database data by using the <code>Query</code> method.</span></span> <span data-ttu-id="3918a-264">Tenga en cuenta cómo funciona este código: el <code>db</code> variable tiene una referencia a la base de datos abierto y se invoca el <code>Query</code> método utilizando la <code>db</code> variable (<code>db.Query</code>).</span><span class="sxs-lookup"><span data-stu-id="3918a-264">Notice how this code works: the <code>db</code> variable has a reference to the opened database, and you invoke the <code>Query</code> method by using the <code>db</code> variable (<code>db.Query</code>).</span></span></p>
+<p><span data-ttu-id="3918a-265">La propia consulta es una instancia de SQL <code>Select</code> instrucción.</span><span class="sxs-lookup"><span data-stu-id="3918a-265">The query itself is a SQL <code>Select</code> statement.</span></span> <span data-ttu-id="3918a-266">(Para cierta información básica acerca de SQL, vea la explicación más adelante). En la instrucción, <code>Movies</code> identifica la tabla a la consulta.</span><span class="sxs-lookup"><span data-stu-id="3918a-266">(For a little background about SQL, see the explanation later.) In the statement, <code>Movies</code> identifies the table to query.</span></span> <span data-ttu-id="3918a-267">El <code>*</code> carácter especifica que la consulta debe devolver todas las columnas de la tabla.</span><span class="sxs-lookup"><span data-stu-id="3918a-267">The <code>*</code> character specifies that the query should return all the columns from the table.</span></span> <span data-ttu-id="3918a-268">(Podría también mostrar columnas individualmente, separados por comas.)</span><span class="sxs-lookup"><span data-stu-id="3918a-268">(You could also list columns individually, separated by commas.)</span></span></p>
+<p><span data-ttu-id="3918a-269">Los resultados de la consulta, si existe, se devuelven y se ponen a disposición de los <code>selectedData</code> variable.</span><span class="sxs-lookup"><span data-stu-id="3918a-269">The results of the query, if any, are returned and made available in the <code>selectedData</code> variable.</span></span> <span data-ttu-id="3918a-270">De nuevo, la variable puede tener cualquier nombre.</span><span class="sxs-lookup"><span data-stu-id="3918a-270">Again, the variable could be named anything.</span></span></p>
+<p><span data-ttu-id="3918a-271">Por último, la tercera línea indica a ASP.NET que desea usar una instancia de la <code>WebGrid</code> auxiliar.</span><span class="sxs-lookup"><span data-stu-id="3918a-271">Finally, the third line tells ASP.NET that you want to use an instance of the <code>WebGrid</code> helper.</span></span> <span data-ttu-id="3918a-272">Crear (<em>crear instancias de</em>) el objeto auxiliar mediante el uso de la <code>new</code> palabra clave y le pasa los resultados de consulta a través de la <code>selectedData</code> variable.</span><span class="sxs-lookup"><span data-stu-id="3918a-272">You create (<em>instantiate</em>) the helper object by using the <code>new</code> keyword and pass it the query results via the <code>selectedData</code> variable.</span></span> <span data-ttu-id="3918a-273">El nuevo <code>WebGrid</code> objeto, junto con los resultados de la consulta de base de datos, se ponen a disposición en el <code>grid</code> variable.</span><span class="sxs-lookup"><span data-stu-id="3918a-273">The new <code>WebGrid</code> object, along with the results of the database query, are made available in the <code>grid</code> variable.</span></span> <span data-ttu-id="3918a-274">Necesitará ese resultado en un momento para ver los datos en la página.</span><span class="sxs-lookup"><span data-stu-id="3918a-274">You'll need that result in a moment to actually display the data in the page.</span></span></p>
+<p><span data-ttu-id="3918a-275">En esta fase, se ha abierto la base de datos, ha obtenido los datos que desea y que ha preparado el <code>WebGrid</code> auxiliar con esos datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-275">At this stage, the database has been opened, you've gotten the data you want, and you've prepared the <code>WebGrid</code> helper with that data.</span></span> <span data-ttu-id="3918a-276">A continuación es crear el marcado en la página.</span><span class="sxs-lookup"><span data-stu-id="3918a-276">Next is to create the markup in the page.</span></span></p>
+<div class="TIP">
+<p>Tip</p>
+<p><span data-ttu-id="3918a-277"><strong>Lenguaje de consulta estructurado (SQL)</strong></span><span class="sxs-lookup"><span data-stu-id="3918a-277"><strong>Structured Query Language (SQL)</strong></span></span></p>
+<p><span data-ttu-id="3918a-278">SQL es un lenguaje que se usa en muchas bases de datos relacionales para administrar los datos en una base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-278">SQL is a language that's used in most relational databases for managing data in a database.</span></span> <span data-ttu-id="3918a-279">Incluye los comandos que le permiten recuperar datos y actualizarlo y que le permiten crear, modificar y administrar datos en tablas de base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-279">It includes commands that let you retrieve data and update it, and that let you create, modify, and manage data in database tables.</span></span> <span data-ttu-id="3918a-280">SQL no es un lenguaje de programación (por ejemplo, C#).</span><span class="sxs-lookup"><span data-stu-id="3918a-280">SQL is different than a programming language (like C#).</span></span> <span data-ttu-id="3918a-281">Con SQL, indicar la base de datos, lo que desea y trabajo de la base de datos consiste en averiguar cómo obtener los datos o realizar la tarea.</span><span class="sxs-lookup"><span data-stu-id="3918a-281">With SQL, you tell the database what you want, and it's the database's job to figure out how to get the data or perform the task.</span></span> <span data-ttu-id="3918a-282">Estos son algunos ejemplos de algunos comandos SQL y qué hacer:</span><span class="sxs-lookup"><span data-stu-id="3918a-282">Here are examples of some SQL commands and what they do:</span></span></p>
+<p><code>Select * From Movies</code></p>
+<p><code>SELECT ID, Name, Price FROM Product WHERE Price &gt; 10.00 ORDER BY Name</code></p>
+<p><span data-ttu-id="3918a-283">La primera <code>Select</code> instrucción obtiene todas las columnas (especificado por <code>*</code>) desde el <em>películas</em> tabla.</span><span class="sxs-lookup"><span data-stu-id="3918a-283">The first <code>Select</code> statement gets all the columns (specified by <code>*</code>) from the <em>Movies</em> table.</span></span></p>
+<p><span data-ttu-id="3918a-284">El segundo <code>Select</code> instrucción recupera las columnas ID, Name y precio de los registros en el <em>producto</em> tabla cuyo valor de la columna precio es superior a 10.</span><span class="sxs-lookup"><span data-stu-id="3918a-284">The second <code>Select</code> statement fetches the ID, Name, and Price columns from records in the <em>Product</em> table whose Price column value is more than 10.</span></span> <span data-ttu-id="3918a-285">El comando devuelve los resultados en orden alfabético según los valores de la columna nombre.</span><span class="sxs-lookup"><span data-stu-id="3918a-285">The command returns the results in alphabetical order based on the values of the Name column.</span></span> <span data-ttu-id="3918a-286">Si no hay registros que coincidan con los criterios de precio, el comando devuelve un conjunto vacío.</span><span class="sxs-lookup"><span data-stu-id="3918a-286">If no records match the price criteria, the command returns an empty set.</span></span></p>
+<p><code>INSERT INTO Product (Name, Description, Price) VALUES ('Croissant', 'A flaky delight', 1.99)</code></p>
+<p><span data-ttu-id="3918a-287">Este comando inserta un nuevo registro en el <em>producto</em> tabla, al establecer la columna nombre para el precio, la columna Description para &quot;Los usuarios no confiables A&quot; y &quot;Croissant&quot; a 1.99.</span><span class="sxs-lookup"><span data-stu-id="3918a-287">This command inserts a new record into the <em>Product</em> table, setting the Name column to &quot;Croissant&quot;, the Description column to &quot;A flaky delight&quot;, and the price to 1.99.</span></span></p>
+<p><span data-ttu-id="3918a-288">Tenga en cuenta que, al especificar un valor no numérico, el valor esté entre comillas simples (no comillas dobles, como en C#).</span><span class="sxs-lookup"><span data-stu-id="3918a-288">Notice that when you're specifying a non-numeric value, the value is enclosed in single quotation marks (not double quotation marks, as in C#).</span></span> <span data-ttu-id="3918a-289">Utilice estas comillas alrededor de los valores de texto o fecha, pero no en torno a los números.</span><span class="sxs-lookup"><span data-stu-id="3918a-289">You use these quotation marks around text or date values, but not around numbers.</span></span></p>
+<p><code>DELETE FROM Product WHERE ExpirationDate &lt; '01/01/2008'</code></p>
+<p><span data-ttu-id="3918a-290">Este comando elimina los registros de la <em>producto</em> tabla cuya columna de fecha de expiración es anterior al 1 de enero de 2008.</span><span class="sxs-lookup"><span data-stu-id="3918a-290">This command deletes records in the <em>Product</em> table whose expiration date column is earlier than January 1, 2008.</span></span> <span data-ttu-id="3918a-291">(El comando supone que el <em>producto</em> tabla tiene una columna de este tipo, por supuesto.) Se especifica la fecha en formato MM/DD/AAAA, pero se debe escribir en el formato que se usa para la configuración regional.</span><span class="sxs-lookup"><span data-stu-id="3918a-291">(The command assumes that the <em>Product</em> table has such a column, of course.) The date is entered here in MM/DD/YYYY format, but it should be entered in the format that's used for your locale.</span></span></p>
+<p><span data-ttu-id="3918a-292">El <code>Insert</code> y <code>Delete</code> comandos no devuelven conjuntos de resultados.</span><span class="sxs-lookup"><span data-stu-id="3918a-292">The <code>Insert</code> and <code>Delete</code> commands don't return result sets.</span></span> <span data-ttu-id="3918a-293">En su lugar, devuelven un número que indica el número de registros afectado por el comando.</span><span class="sxs-lookup"><span data-stu-id="3918a-293">Instead, they return a number that tells you how many records were affected by the command.</span></span></p>
+<p><span data-ttu-id="3918a-294">Para algunas de estas operaciones (por ejemplo, insertar y eliminar registros), el proceso que solicita la operación debe tener los permisos adecuados en la base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-294">For some of these operations (like inserting and deleting records), the process that's requesting the operation has to have appropriate permissions in the database.</span></span> <span data-ttu-id="3918a-295">Es por eso para bases de datos de producción a menudo tiene que proporcionar un nombre de usuario y una contraseña cuando se conecta a la base de datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-295">That's why for production databases you often have to supply a user name and password when you connect to the database.</span></span></p>
+<p><span data-ttu-id="3918a-296">Existen docenas de comandos SQL, pero siguen un patrón similar a los comandos que aparecen aquí.</span><span class="sxs-lookup"><span data-stu-id="3918a-296">There are dozens of SQL commands, but they all follow a pattern like the commands you see here.</span></span> <span data-ttu-id="3918a-297">Puede usar los comandos SQL para crear tablas de base de datos, contar el número de registros en una tabla, calcular precios y realizar muchas más operaciones.</span><span class="sxs-lookup"><span data-stu-id="3918a-297">You can use SQL commands to create database tables, count the number of records in a table, calculate prices, and perform many more operations.</span></span></p>
+</div>
+<h3 id="adding-markup-to-display-the-data"><span data-ttu-id="3918a-298">Adición de marcado para mostrar los datos</span><span class="sxs-lookup"><span data-stu-id="3918a-298">Adding Markup to Display the Data</span></span></h3>
+<p><span data-ttu-id="3918a-299">Dentro de la <code>&lt;head&gt;</code> elemento, el conjunto de contenido de la <code>&lt;title&gt;</code> elemento a &quot;Movies&quot;:</span><span class="sxs-lookup"><span data-stu-id="3918a-299">Inside the <code>&lt;head&gt;</code> element, set contents of the <code>&lt;title&gt;</code> element to &quot;Movies&quot;:</span></span></p>
+<pre><code class="lang-html" name="Main" highlight-lines="3">&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Movies&lt;/title&gt;
+&lt;/head&gt;
+</code></pre>
+<p><span data-ttu-id="3918a-300">Dentro de la <code>&lt;body&gt;</code> elemento de la página, agregue lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="3918a-300">Inside the <code>&lt;body&gt;</code> element of the page, add the following:</span></span></p>
+<pre><code class="lang-html" name="Main">&lt;h1&gt;Movies&lt;/h1&gt;
+&lt;div&gt;
+    @grid.GetHtml()
+&lt;/div&gt;
+</code></pre>
+<p><span data-ttu-id="3918a-301">Ya está.</span><span class="sxs-lookup"><span data-stu-id="3918a-301">That's it.</span></span> <span data-ttu-id="3918a-302">El <code>grid</code> variable es el valor que creó cuando creó la <code>WebGrid</code> objeto en el código anterior.</span><span class="sxs-lookup"><span data-stu-id="3918a-302">The <code>grid</code> variable is the value you created when you created the <code>WebGrid</code> object in code earlier.</span></span></p>
+<p><span data-ttu-id="3918a-303">En la vista de árbol de WebMatrix, haga clic en la página y seleccione <strong>iniciar en el explorador</strong>.</span><span class="sxs-lookup"><span data-stu-id="3918a-303">In the WebMatrix tree view, right-click the page and select <strong>Launch in browser</strong>.</span></span> <span data-ttu-id="3918a-304">Verá algo parecido a esta página:</span><span class="sxs-lookup"><span data-stu-id="3918a-304">You'll see something like this page:</span></span></p>
+<p><img src="displaying-data/_static/image18.png" alt="Salida de aplicación auxiliar WebGrid predeterminada de la tabla de películas" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-306">Haga clic en un vínculo de encabezado de columna para ordenar por esa columna.</span><span class="sxs-lookup"><span data-stu-id="3918a-306">Click a column heading link to sort by that column.</span></span> <span data-ttu-id="3918a-307">Poder ordenar haciendo clic en un encabezado es una característica que está integrada en el <strong>WebGrid</strong> auxiliar.</span><span class="sxs-lookup"><span data-stu-id="3918a-307">Being able to sort by clicking a heading is a feature that's built into the <strong>WebGrid</strong> helper.</span></span></p>
+<p><span data-ttu-id="3918a-308">El <code>GetHtml</code> método, como su nombre sugiere, genera marcado que muestra los datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-308">The <code>GetHtml</code> method, as its name suggests, generates markup that displays the data.</span></span> <span data-ttu-id="3918a-309">De forma predeterminada, el <code>GetHtml</code> método genera un elemento HTML <code>&lt;table&gt;</code> elemento.</span><span class="sxs-lookup"><span data-stu-id="3918a-309">By default, the <code>GetHtml</code> method generates an HTML <code>&lt;table&gt;</code> element.</span></span> <span data-ttu-id="3918a-310">(Si lo desea, puede comprobar la representación examinando el origen de la página en el explorador).</span><span class="sxs-lookup"><span data-stu-id="3918a-310">(If you want, you can verify the rendering by looking at the source of the page in the browser.)</span></span></p>
+<h2 id="modifying-the-look-of-the-grid"><span data-ttu-id="3918a-311">Modificar la apariencia de la cuadrícula</span><span class="sxs-lookup"><span data-stu-id="3918a-311">Modifying the Look of the Grid</span></span></h2>
+<p><span data-ttu-id="3918a-312">Mediante el <code>WebGrid</code> auxiliar como acaba de hacer es fácil, pero la presentación resultante es simple.</span><span class="sxs-lookup"><span data-stu-id="3918a-312">Using the <code>WebGrid</code> helper like you just did is easy, but the resulting display is plain.</span></span> <span data-ttu-id="3918a-313">El <code>WebGrid</code> auxiliar tiene todo tipo de opciones que permiten controlar cómo se muestran los datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-313">The <code>WebGrid</code> helper has all sorts of options that let you control how the data is displayed.</span></span> <span data-ttu-id="3918a-314">Hay demasiadas para explorar en este tutorial, pero en esta sección le dará una idea de algunas de esas opciones.</span><span class="sxs-lookup"><span data-stu-id="3918a-314">There are far too many to explore in this tutorial, but this section will give you an idea of some of those options.</span></span> <span data-ttu-id="3918a-315">Algunas opciones adicionales se tratarán en otros tutoriales de esta serie.</span><span class="sxs-lookup"><span data-stu-id="3918a-315">A few additional options will be covered in later tutorials in this series.</span></span></p>
+<h3 id="specifying-individual-columns-to-display"><span data-ttu-id="3918a-316">Especificar columnas individuales para mostrar</span><span class="sxs-lookup"><span data-stu-id="3918a-316">Specifying Individual Columns to Display</span></span></h3>
+<p><span data-ttu-id="3918a-317">Para empezar, puede especificar que desea mostrar solo algunas columnas.</span><span class="sxs-lookup"><span data-stu-id="3918a-317">To start, you can specify that you want to display only certain columns.</span></span> <span data-ttu-id="3918a-318">De forma predeterminada, como ha visto, la cuadrícula muestra cuatro de las columnas de la <em>películas</em> tabla.</span><span class="sxs-lookup"><span data-stu-id="3918a-318">By default, as you've seen, the grid shows all four of the columns from the <em>Movies</em> table.</span></span></p>
+<p><span data-ttu-id="3918a-319">En el <em>Movies.cshtml</em> de archivo, reemplace el <code>@grid.GetHtml()</code> marcado que acaba de agregar por lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="3918a-319">In the <em>Movies.cshtml</em> file, replace the <code>@grid.GetHtml()</code> markup that you just added with the following:</span></span></p>
+<pre><code class="lang-css" name="Main">@grid.GetHtml(
+    columns: grid.Columns(
+        grid.Column(&quot;Title&quot;),
+        grid.Column(&quot;Genre&quot;),
+        grid.Column(&quot;Year&quot;)
+    )
+)
+</code></pre>
+<p><span data-ttu-id="3918a-320">Para indicar a qué columnas desea mostrar de la aplicación auxiliar, incluye un <code>columns</code> parámetro para el <code>GetHtml</code> método y pasar una colección de columnas.</span><span class="sxs-lookup"><span data-stu-id="3918a-320">To tell the helper which columns to display, you include a <code>columns</code> parameter for the <code>GetHtml</code> method and pass in a collection of columns.</span></span> <span data-ttu-id="3918a-321">En la colección, debe especificar cada columna que se va a incluir.</span><span class="sxs-lookup"><span data-stu-id="3918a-321">In the collection, you specify each column to include.</span></span> <span data-ttu-id="3918a-322">Especifique una columna individual para mostrar mediante la inclusión de un <code>grid.Column</code> de objetos y pase el nombre de la columna de datos que desee.</span><span class="sxs-lookup"><span data-stu-id="3918a-322">You specify an individual column to display by including a <code>grid.Column</code> object, and pass in the name of the data column you want.</span></span> <span data-ttu-id="3918a-323">(Estas columnas deben incluirse en los resultados de consulta SQL: el <code>WebGrid</code> auxiliar no puede mostrar las columnas que no se han devuelto por la consulta.)</span><span class="sxs-lookup"><span data-stu-id="3918a-323">(These columns must be included in the SQL query results — the <code>WebGrid</code> helper cannot display columns that were not returned by the query.)</span></span></p>
+<p><span data-ttu-id="3918a-324">Iniciar el <em>Movies.cshtml</em> página en el explorador y esta vez obtendrá una pantalla como la siguiente (tenga en cuenta que no se muestra ninguna columna de identificador):</span><span class="sxs-lookup"><span data-stu-id="3918a-324">Launch the <em>Movies.cshtml</em> page in the browser again, and this time you get a display like the following one (notice that no ID column is displayed):</span></span></p>
+<p><img src="displaying-data/_static/image19.png" alt="WebGrid que muestre solo las columnas seleccionadas" data-linktype="relative-path"></p>
+<h3 id="changing-the-look-of-the-grid"><span data-ttu-id="3918a-326">Cambiar la apariencia de la cuadrícula</span><span class="sxs-lookup"><span data-stu-id="3918a-326">Changing the Look of the Grid</span></span></h3>
+<p><span data-ttu-id="3918a-327">Hay bastantes más opciones para mostrar columnas, algunas de las cuales se analizarán en los tutoriales posteriores de este conjunto.</span><span class="sxs-lookup"><span data-stu-id="3918a-327">There are quite a few more options for displaying columns, some of which will be explored in later tutorials in this set.</span></span> <span data-ttu-id="3918a-328">Por ahora, esta sección le presentará maneras en que puede aplicar el estilo de la cuadrícula como un todo.</span><span class="sxs-lookup"><span data-stu-id="3918a-328">For now, this section will introduce you to ways in which you can style the grid as a whole.</span></span></p>
+<p><span data-ttu-id="3918a-329">Dentro de la <code>&lt;head&gt;</code> sección de la página, justo antes de cerrar <code>&lt;/head&gt;</code> etiqueta, agregue las siguientes <code>&lt;style&gt;</code> elemento:</span><span class="sxs-lookup"><span data-stu-id="3918a-329">Inside the <code>&lt;head&gt;</code> section of the page, just before the closing <code>&lt;/head&gt;</code> tag, add the following <code>&lt;style&gt;</code> element:</span></span></p>
+<pre><code class="lang-css" name="Main">&lt;style type=&quot;text/css&quot;&gt;
+  .grid { margin: 4px; border-collapse: collapse; width: 600px; }
+  .grid th, .grid td { border: 1px solid #C0C0C0; padding: 5px; }
+  .head { background-color: #E8E8E8; font-weight: bold; color: #FFF; }
+  .alt { background-color: #E8E8E8; color: #000; }
+&lt;/style&gt;
+</code></pre>
+<p><span data-ttu-id="3918a-330">Este marcado CSS define clases denominadas <code>grid</code>, <code>head</code>, y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="3918a-330">This CSS markup defines classes named <code>grid</code>, <code>head</code>, and so on.</span></span> <span data-ttu-id="3918a-331">También puede poner estas definiciones de estilo en otro <em>.css</em> de archivos y vincularla a la página.</span><span class="sxs-lookup"><span data-stu-id="3918a-331">You could also put these style definitions in a separate <em>.css</em> file and link that to the page.</span></span> <span data-ttu-id="3918a-332">(De hecho, se hará más adelante en este conjunto del tutorial.) Pero para facilitar las cosas para este tutorial, dentro de la misma página que muestra los datos.</span><span class="sxs-lookup"><span data-stu-id="3918a-332">(In fact, you'll do that later in this tutorial set.) But to make things easy for this tutorial, they're inside the same page that displays the data.</span></span></p>
+<p><span data-ttu-id="3918a-333">Ahora puede obtener el <code>WebGrid</code> auxiliar para utilizar estas clases de estilo.</span><span class="sxs-lookup"><span data-stu-id="3918a-333">Now you can get the <code>WebGrid</code> helper to use these style classes.</span></span> <span data-ttu-id="3918a-334">La aplicación auxiliar tiene un número de propiedades (por ejemplo, <code>tableStyle</code>) para este fin, asigne un nombre de clase de estilo CSS a ellos, y ese nombre de clase se representa como parte del marcado que representa la aplicación auxiliar.</span><span class="sxs-lookup"><span data-stu-id="3918a-334">The helper has a number of properties (for example, <code>tableStyle</code>) for just this purpose — you assign a CSS style class name to them, and that class name is rendered as part of the markup that's rendered by the helper.</span></span></p>
+<p><span data-ttu-id="3918a-335">Cambiar el <code>grid.GetHtml</code> marcado para que ahora quede similar a este código:</span><span class="sxs-lookup"><span data-stu-id="3918a-335">Change the <code>grid.GetHtml</code> markup so that it now looks like this code:</span></span></p>
+<pre><code class="lang-css" name="Main">@grid.GetHtml(
+    tableStyle: &quot;grid&quot;,
+    headerStyle: &quot;head&quot;,
+    alternatingRowStyle: &quot;alt&quot;,
+    columns: grid.Columns(
+        grid.Column(&quot;Title&quot;),
+        grid.Column(&quot;Genre&quot;),
+        grid.Column(&quot;Year&quot;)
+    )
+)
+</code></pre>
+<p><span data-ttu-id="3918a-336">Lo nuevo aquí es que se ha agregado <code>tableStyle</code>, <code>headerStyle</code>, y <code>alternatingRowStyle</code> parámetros para el <code>GetHtml</code> método.</span><span class="sxs-lookup"><span data-stu-id="3918a-336">What's new here is that you've added <code>tableStyle</code>, <code>headerStyle</code>, and <code>alternatingRowStyle</code> parameters to the <code>GetHtml</code> method.</span></span> <span data-ttu-id="3918a-337">Estos parámetros se han establecido los nombres de los estilos CSS que agregó hace un momento.</span><span class="sxs-lookup"><span data-stu-id="3918a-337">These parameters have been set to the names of the CSS styles that you added a moment ago.</span></span></p>
+<p><span data-ttu-id="3918a-338">Ejecute la página, y esta vez verá una cuadrícula que se parece mucho menos simple que antes:</span><span class="sxs-lookup"><span data-stu-id="3918a-338">Run the page, and this time you see a grid that looks much less plain than before:</span></span></p>
+<p><img src="displaying-data/_static/image20.png" alt="Pantalla de WebGrid que incluye los parámetros establecidos en los nombres de clase CSS" data-linktype="relative-path"></p>
+<p><span data-ttu-id="3918a-340">Para ver qué la <code>GetHtml</code> método generado, puede buscar en el origen de la página en el explorador.</span><span class="sxs-lookup"><span data-stu-id="3918a-340">To see what the <code>GetHtml</code> method generated, you can look at the source of the page in the browser.</span></span> <span data-ttu-id="3918a-341">No entraremos en detalles aquí, pero lo importante es que mediante la especificación de parámetros como <code>tableStyle</code>, provocó la cuadrícula generar etiquetas HTML similar al siguiente:</span><span class="sxs-lookup"><span data-stu-id="3918a-341">We won't go into detail here, but the important point is that by specifying parameters like <code>tableStyle</code>, you caused the grid to generate HTML tags like the following:</span></span></p>
+<p><code>&lt;table class=&quot;grid&quot;&gt;</code></p>
+<p><span data-ttu-id="3918a-342">El <code>&lt;table&gt;</code> etiqueta a la que ha tenido un <code>class</code> atributo agregado a lo que hace referencia a una de las reglas CSS que agregó anteriormente.</span><span class="sxs-lookup"><span data-stu-id="3918a-342">The <code>&lt;table&gt;</code> tag has had a <code>class</code> attribute added to it that references one of the CSS rules that you added earlier.</span></span> <span data-ttu-id="3918a-343">Este código muestra el patrón básico — parámetros diferentes para el <code>GetHtml</code> let, referencia de los métodos CSS clases que, a continuación, genera el método junto con el marcado.</span><span class="sxs-lookup"><span data-stu-id="3918a-343">This code shows you the basic pattern — different parameters for the <code>GetHtml</code> method let you reference CSS classes that the method then generates along with the markup.</span></span> <span data-ttu-id="3918a-344">Qué hacer con las clases CSS depende de usted.</span><span class="sxs-lookup"><span data-stu-id="3918a-344">What you do with the CSS classes is up to you.</span></span></p>
+<h2 id="adding-paging"><span data-ttu-id="3918a-345">Agregar paginación</span><span class="sxs-lookup"><span data-stu-id="3918a-345">Adding Paging</span></span></h2>
+<p><span data-ttu-id="3918a-346">Como la última tarea para este tutorial, agregará paginación a la cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="3918a-346">As the last task for this tutorial, you'll add paging to the grid.</span></span> <span data-ttu-id="3918a-347">En estos momentos no supone ningún problema para mostrar todas las películas a la vez.</span><span class="sxs-lookup"><span data-stu-id="3918a-347">Right now it's no problem to display all your movies at once.</span></span> <span data-ttu-id="3918a-348">Pero si ha agregado cientos de películas, se obtendría mucho la presentación de página.</span><span class="sxs-lookup"><span data-stu-id="3918a-348">But if you added hundreds of movies, the page display would get long.</span></span></p>
+<p><span data-ttu-id="3918a-349">En el código de página, cambie la línea que crea la <code>WebGrid</code> objeto en el código siguiente:</span><span class="sxs-lookup"><span data-stu-id="3918a-349">In the page code, change the line that creates the <code>WebGrid</code> object to the following code:</span></span></p>
+<pre><code class="lang-csharp" name="Main">var grid = new WebGrid(source: selectedData, rowsPerPage: 3);
+</code></pre>
+<p><span data-ttu-id="3918a-350">La única diferencia respecto antes es que se ha agregado un <code>rowsPerPage</code> parámetro que se establece en 3.</span><span class="sxs-lookup"><span data-stu-id="3918a-350">The only difference from before is that you've added a <code>rowsPerPage</code> parameter that's set to 3.</span></span></p>
+<p><span data-ttu-id="3918a-351">Ejecute la página.</span><span class="sxs-lookup"><span data-stu-id="3918a-351">Run the page.</span></span> <span data-ttu-id="3918a-352">La cuadrícula muestra 3 filas en un tiempo, además de vínculos de navegación que permiten la página a través de las películas en la base de datos:</span><span class="sxs-lookup"><span data-stu-id="3918a-352">The grid displays 3 rows at a time, plus navigation links that let you page through the movies in your database:</span></span></p>
+<p><img src="displaying-data/_static/image21.png" alt="Visualización de WebGrid con paginación" data-linktype="relative-path"></p>
+<h2 id="coming-up-next"><span data-ttu-id="3918a-354">Próxima</span><span class="sxs-lookup"><span data-stu-id="3918a-354">Coming Up Next</span></span></h2>
+<p><span data-ttu-id="3918a-355">En el siguiente tutorial, obtendrá información sobre cómo usar código de Razor y C# para obtener la entrada de usuario en un formulario.</span><span class="sxs-lookup"><span data-stu-id="3918a-355">In the next tutorial, you'll learn how to use Razor and C# code to get user input in a form.</span></span> <span data-ttu-id="3918a-356">Por lo que puede buscar películas por título o género, agregará un cuadro de búsqueda a la página de películas.</span><span class="sxs-lookup"><span data-stu-id="3918a-356">You'll add a search box to the Movies page so that you can find movies by title or genre.</span></span></p>
+<h2 id="complete-listing-for-movies-page"><span data-ttu-id="3918a-357">Lista completa de la página de películas</span><span class="sxs-lookup"><span data-stu-id="3918a-357">Complete Listing for Movies Page</span></span></h2>
+<pre><code class="lang-cshtml" name="Main">@{
+    var db = Database.Open(&quot;WebPagesMovies&quot;);
+    var selectedData = db.Query(&quot;SELECT * FROM Movies&quot;);
+    var grid = new WebGrid(source: selectedData, rowsPerPage: 3);
+}
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;title&gt;Movies&lt;/title&gt;
+        &lt;style type=&quot;text/css&quot;&gt;
+          .grid { margin: 4px; border-collapse: collapse; width: 600px; }
+          .grid th, .grid td { border: 1px solid #C0C0C0; padding: 5px; }
+          .head { background-color: #E8E8E8; font-weight: bold; color: #FFF; }
+          .alt { background-color: #E8E8E8; color: #000; }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Movies&lt;/h1&gt;
+        &lt;div&gt;
+            @grid.GetHtml(
+                tableStyle: &quot;grid&quot;,
+                headerStyle: &quot;head&quot;,
+                alternatingRowStyle: &quot;alt&quot;,
+                columns: grid.Columns(
+                    grid.Column(&quot;Title&quot;),
+                    grid.Column(&quot;Genre&quot;),
+                    grid.Column(&quot;Year&quot;)
+                )
+            )
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="additional-resources"><span data-ttu-id="3918a-358">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="3918a-358">Additional Resources</span></span></h2>
+<ul>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=202890" data-linktype="external"><span data-ttu-id="3918a-359">Introducción a la programación Web de ASP.NET mediante la sintaxis Razor</span><span class="sxs-lookup"><span data-stu-id="3918a-359">Introduction to ASP.NET Web Programming Using the Razor Syntax</span></span></a></li>
+</ul>
+<div class="step-by-step">
+<p><span data-ttu-id="3918a-360"><a href="intro-to-web-pages-programming" data-linktype="relative-path">Anterior</a>
+<a href="form-basics" data-linktype="relative-path">Siguiente</a></span><span class="sxs-lookup"><span data-stu-id="3918a-360"><a href="intro-to-web-pages-programming" data-linktype="relative-path">Previous</a>
+<a href="form-basics" data-linktype="relative-path">Next</a></span></span></p>
+</div>
+
+						<!-- </content> -->
+
+						</main>
+
+						<!-- feedback section -->
+
+
+
+						<!-- end feedback section -->
+
+						<div class="footerContainer is-visible-interactive has-default-focus ">
+<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+
+    <a data-mscc-ic="false" class="locale-selector-link" href="#" data-bi-name="select-locale"><span class="icon docon docon-world is-size-4 has-margin-right-small"></span><span class="local-selector-link-text"></span></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Documentación de versiones anteriores</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blog</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Contribuir</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacidad &amp; cookies</a></li>
+		<li><a data-mscc-ic="false" href="/es-es/legal/termsofuse" data-bi-name="termsofuse">Términos de uso</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Comentarios del sitio</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Marcas comerciales</a></li>
+    </ul>
+</footer>
+						</div>
+					</div>
+
+					<!--end of div.columns -->
+
+				</div>
+
+			<!--end of .primary-holder -->
+			</section>
+
+				<div id="left-container" class="left-container column is-one-third-tablet is-one-quarter-desktop">
+					<nav class="sidebar" id="sidebar" data-bi-name="left toc" role="navigation" aria-label="Navegación principal">
+						<button class="sidebar-header has-inner-focus" type="button" aria-label="Cerrar" data-bi-name="contents-collapse">
+							<span>Contenido</span>
+							<span class="docon docon-navigate-close" aria-hidden="true"></span>
+						</button>
+						<div id="sidebarContent">
+							<div class="filterHolder">
+							</div>
+							<nav class="toc"></nav>
+							<div class="pdf-download-holder"></div>
+						</div>
+					</nav>
+				</div>
+
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+		</div>
+
+		<!--end of .mainContainer -->
+	</div>
+
+	<div id="openFeedbackContainer" class="openfeedback-container"></div>
+
+	<div class="footerContainer has-default-focus is-hidden-interactive ">
+<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+
+    <a data-mscc-ic="false" class="locale-selector-link" href="#" data-bi-name="select-locale"><span class="icon docon docon-world is-size-4 has-margin-right-small"></span><span class="local-selector-link-text"></span></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Documentación de versiones anteriores</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blog</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Contribuir</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacidad &amp; cookies</a></li>
+		<li><a data-mscc-ic="false" href="/es-es/legal/termsofuse" data-bi-name="termsofuse">Términos de uso</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Comentarios del sitio</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Marcas comerciales</a></li>
+    </ul>
+</footer>
+	</div>
+
+	<div id="action-panel" role="region" aria-label="Panel de acciones" class="action-panel has-default-focus" tabindex="-1"></div>
+<noscript><img src="https://docs.microsoft.com/akam/10/pixel_3abe0739?a=dD1jN2U5NDVmMmRmZTQzYTY3Njg0YzRjZjEwYThiM2Q1ZGY0NzQ4MjZmJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+</html>

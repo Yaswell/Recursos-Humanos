@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EmplModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="EmplModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EmpleadoSet" EntityType="EmplModel.Empleado" />
+    <EntitySet Name="DepartamentoSet" EntityType="EmplModel.Departamento" />
+    <EntitySet Name="CargoSet" EntityType="EmplModel.Cargo" />
+    <EntitySet Name="NominaSet" EntityType="EmplModel.Nomina" />
+    <EntitySet Name="PermisosSet" EntityType="EmplModel.Permisos" />
+    <EntitySet Name="SalidaEMpleadosSet" EntityType="EmplModel.SalidaEMpleados" />
+    <EntitySet Name="VacacionesSet" EntityType="EmplModel.Vacaciones" />
+  </EntityContainer>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoEmpleado" Type="String" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" />
+    <Property Name="Apellido" Type="String" Nullable="false" />
+    <Property Name="Telefono" Type="Int32" Nullable="false" />
+    <Property Name="Departamento" Type="String" Nullable="false" />
+    <Property Name="Cargo" Type="String" Nullable="false" />
+    <Property Name="FechadeNac" Type="DateTime" Nullable="false" />
+    <Property Name="Salario" Type="Int32" Nullable="false" />
+    <Property Name="Estatus" Type="String" Nullable="false" DefaultValue="Activo" />
+  </EntityType>
+  <EntityType Name="Departamento">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoDepartamento" Type="String" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cargo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomCargo" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Nomina">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Año" Type="Int32" Nullable="false" />
+    <Property Name="Mes" Type="Int32" Nullable="false" />
+    <Property Name="MontoTotal" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Permisos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Desde" Type="DateTime" Nullable="false" />
+    <Property Name="Hasta" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="Motivo" Type="String" Nullable="false" />
+    <Property Name="Comentario" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SalidaEMpleados">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Empleado" Type="String" Nullable="false" />
+    <Property Name="TipoSalida" Type="String" Nullable="false" />
+    <Property Name="Motivo" Type="String" Nullable="false" />
+    <Property Name="FechaSalida" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vacaciones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Desde" Type="DateTime" Nullable="false" />
+    <Property Name="Hasta" Type="DateTime" Nullable="false" />
+  </EntityType>
+</Schema>
